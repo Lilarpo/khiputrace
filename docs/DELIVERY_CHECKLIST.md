@@ -22,7 +22,7 @@ Estado: **preparación local completada; entrega oficial aún pendiente**. Los c
 | [x] | Guion breve de demo y límites | DEMO.md: 5 minutos, datos sintéticos y registro manual pendiente. |
 | [x] | Copia de entrega revisada sin archivos sensibles detectados | DELIVERY y manifiesto público: entornos/keypairs excluidos, rutas anonimizadas, escaneo acotado sin candidatos. Los originales históricos permanecen locales. |
 | [ ] | Recorrido manual con extensión real | Ejecutar DEMO.md, comprobar aprobación/rechazo/cambio de cuenta y registrar resultados reales. La automatización no sustituye este paso. |
-| [ ] | Repositorio accesible para revisión | Git inicializado en `main`, primera preparación local sin commit/remote/push. Cuenta autenticada `Lilarpo`; repositorio `khiputrace` todavía no existe. Publicación pendiente de autorización. |
+| [x] | Repositorio accesible para revisión | Publicado en https://github.com/Lilarpo/khiputrace. Rama `main`, commit `5f84c24`, visibilidad pública comprobada. |
 | [ ] | Envío oficial e identificación | Entregar URL y datos de certificado/correo de registro por el formulario oficial; no incorporarlos al repositorio ni on-chain. |
 
 No se requiere hosting contratado: la demo puede ejecutarse localmente contra Devnet. La documentación oficial indica plazo inicial **22/11/2026, 23:59 CDMX** y correcciones solicitadas hasta **30/11/2026, 23:59 CDMX**; comprobar vigencia en la fuente antes de enviar. Este archivo no acredita un envío dentro del plazo.

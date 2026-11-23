@@ -9,7 +9,7 @@ Estado general: **preparación técnica completada; recorrido humano, publicaci�
 
 | Requisito oficial | Implementación correspondiente | Archivo principal | Evidencia / prueba | Estado | Observaciones |
 |---|---|---|---|---|---|
-| Entregar repositorio revisable | Programa, frontend, IDL, cliente y documentación disponibles localmente | `README.md`, `programs/`, `frontend/`, `docs/` | Revisión local de archivos | PENDIENTE de publicación | No existe historial Git ni URL pública accesible. |
+| Entregar repositorio revisable | Programa, frontend, IDL, cliente y documentación disponibles | `README.md`, `programs/`, `frontend/`, `docs/` | Revisión local y publicación GitHub | VERIFICADO | https://github.com/Lilarpo/khiputrace |
 | Código Rust y Anchor | Programa Anchor con cuentas, instrucciones y reglas on-chain | `programs/khiputrace/src/` | `npm run verify`; LiteSVM; `npm run check:idl` | VERIFICADO | Evidencias históricas reproducibles. |
 | Cuentas relacionadas y PDAs | `Audit` y `Finding`, seeds por autoridad/auditoría e ID u64 little-endian | `programs/khiputrace/src/state/` | Pruebas Rust/SBF y decodificación | VERIFICADO | No equivale a un despliegue nuevo. |
 | Crear registros | Crear auditoría y hallazgo | `instructions/create_audit.rs`, `create_finding.rs` | Casos SBF 1.3 y 4.2 | VERIFICADO | Crear auditoría tiene una firma Devnet finalized. |

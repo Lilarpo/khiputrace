@@ -1093,3 +1093,11 @@ Revisión sin lectura de claves privadas:
 - No se encontraron tokens, claves privadas, seed phrases ni credenciales en el índice con los patrones aplicados.
 
 No se hizo commit ni push. Esta revisión no acredita ausencia universal de secretos ni reemplaza escaneo previo a una publicación.
+
+## Publicación GitHub confirmada
+
+- Repositorio público: [https://github.com/Lilarpo/khiputrace](https://github.com/Lilarpo/khiputrace).
+- Rama `main` publicada.
+- Commit `5f84c24`.
+- GitHub API confirmó visibilidad pública y presencia de `README.md`.
+- No se publicó una clave privada ni se creó un nuevo despliegue.

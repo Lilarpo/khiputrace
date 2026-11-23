@@ -1,5 +1,7 @@
 # KhipuTrace
 
+Repositorio público: [https://github.com/Lilarpo/khiputrace](https://github.com/Lilarpo/khiputrace)
+
 Aplicación descentralizada para gestionar auditorías y hallazgos de seguridad en Solana. **Proyecto propio para WayLearn Solana Engineering Track: Advanced**. Programa desplegado en **Devnet**, frontend React ejecutable en local y evidencia verificable del ciclo completo.
 
 **Estado de entrega:** documentación y código preparados; ejecución automatizada Devnet aprobada. Quedan pendientes el recorrido humano con extensión real, publicar un repositorio accesible para revisión y enviar el formulario oficial. No se declara certificación ni auditoría profesional.

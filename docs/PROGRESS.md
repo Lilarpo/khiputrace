@@ -1127,3 +1127,15 @@ Auditoría ejecutada:
 - El escaneo no sustituye una revisión independiente ni un escaneo contra el historial publicado.
 
 No se realizó commit ni push durante esta preparación. La publicación pública requiere una confirmación explícita posterior a revisar el resumen de seguridad.
+
+## Publicación GitHub
+
+Fecha: 23 de noviembre de 2026 UTC.
+
+- Cuenta autenticada: `Lilarpo`.
+- Repositorio público: [https://github.com/Lilarpo/khiputrace](https://github.com/Lilarpo/khiputrace).
+- Rama publicada: `main`.
+- Commit inicial/publicado: `5f84c24`.
+- Visibilidad comprobada mediante GitHub CLI: `PUBLIC`.
+- README comprobado desde GitHub API.
+- No se realizaron escrituras, despliegues, airdrops ni transacciones adicionales.
