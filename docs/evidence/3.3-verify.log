@@ -1,0 +1,248 @@
+
+> khiputrace@0.1.0 verify
+> npm run check:architecture && npm run test:scaffold && npm run test:application && npm run test:infrastructure && npm run typecheck && npm run build && npm run check:rust
+
+
+> khiputrace@0.1.0 check:architecture
+> node scripts/check-architecture.mjs
+
+Límites de dependencias frontend: OK.
+
+> khiputrace@0.1.0 test:scaffold
+> node --test tests/scaffold/*.test.mjs
+
+✔ acepta contratos internos y adaptadores externos en Infrastructure (38.141074ms)
+✔ rechaza dependencias externas y hacia adaptadores en capas internas (16.584614ms)
+✔ rechaza any explícito y dependencias calculadas (4.100262ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1470.61682
+
+> khiputrace@0.1.0 test:application
+> node scripts/test-application.mjs
+
+✔ CreateAudit: invoca solo su puerto con datos normalizados y conserva resultado (23.033394ms)
+✔ CreateAudit: propaga errores del repositorio con causa, código y referencia intactos (4.870566ms)
+✔ CreateAudit: espera al recibo del repositorio y no devuelve éxito prematuro (1.627444ms)
+✔ GetAudits: invoca solo su puerto con datos normalizados y conserva resultado (1.29028ms)
+✔ GetAudits: propaga errores del repositorio con causa, código y referencia intactos (1.19804ms)
+✔ CreateFinding: invoca solo su puerto con datos normalizados y conserva resultado (1.645035ms)
+✔ CreateFinding: propaga errores del repositorio con causa, código y referencia intactos (1.004622ms)
+✔ CreateFinding: espera al recibo del repositorio y no devuelve éxito prematuro (0.898023ms)
+✔ GetFindings: invoca solo su puerto con datos normalizados y conserva resultado (1.66909ms)
+✔ GetFindings: propaga errores del repositorio con causa, código y referencia intactos (1.842622ms)
+✔ UpdateFinding: invoca solo su puerto con datos normalizados y conserva resultado (1.993169ms)
+✔ UpdateFinding: propaga errores del repositorio con causa, código y referencia intactos (1.077862ms)
+✔ UpdateFinding: espera al recibo del repositorio y no devuelve éxito prematuro (0.541169ms)
+✔ ResolveFinding: invoca solo su puerto con datos normalizados y conserva resultado (1.049043ms)
+✔ ResolveFinding: propaga errores del repositorio con causa, código y referencia intactos (0.533837ms)
+✔ ResolveFinding: espera al recibo del repositorio y no devuelve éxito prematuro (0.419475ms)
+✔ CloseFinding: invoca solo su puerto con datos normalizados y conserva resultado (0.921288ms)
+✔ CloseFinding: propaga errores del repositorio con causa, código y referencia intactos (0.692553ms)
+✔ CloseFinding: espera al recibo del repositorio y no devuelve éxito prematuro (0.778511ms)
+✔ CreateAudit ID inválido -1: error tipado y ningún acceso al repositorio (1.781575ms)
+✔ CreateFinding ID inválido -1: error tipado y ningún acceso al repositorio (1.604906ms)
+✔ CreateAudit ID inválido 18446744073709551616: error tipado y ningún acceso al repositorio (1.163474ms)
+✔ CreateFinding ID inválido 18446744073709551616: error tipado y ningún acceso al repositorio (1.676164ms)
+✔ CreateAudit ID inválido 1: error tipado y ningún acceso al repositorio (1.158872ms)
+✔ CreateFinding ID inválido 1: error tipado y ningún acceso al repositorio (0.891338ms)
+✔ CreateAudit título required 0: error tipado y ningún acceso al repositorio (1.270023ms)
+✔ CreateAudit título required 4: error tipado y ningún acceso al repositorio (1.222037ms)
+✔ CreateAudit título tooLong 97: error tipado y ningún acceso al repositorio (1.397542ms)
+✔ CreateAudit título tooLong 49: error tipado y ningún acceso al repositorio (1.193502ms)
+✔ CreateAudit título invalidUnicode 1: error tipado y ningún acceso al repositorio (0.663944ms)
+✔ CreateFinding title required: error tipado y ningún acceso al repositorio (0.820128ms)
+✔ UpdateFinding title required: error tipado y ningún acceso al repositorio (0.74506ms)
+✔ CreateFinding title tooLong: error tipado y ningún acceso al repositorio (1.063411ms)
+✔ UpdateFinding title tooLong: error tipado y ningún acceso al repositorio (0.859005ms)
+✔ CreateFinding description required: error tipado y ningún acceso al repositorio (1.111016ms)
+✔ UpdateFinding description required: error tipado y ningún acceso al repositorio (0.854004ms)
+✔ CreateFinding description tooLong: error tipado y ningún acceso al repositorio (0.868276ms)
+✔ UpdateFinding description tooLong: error tipado y ningún acceso al repositorio (0.725582ms)
+✔ CreateFinding description invalidUnicode: error tipado y ningún acceso al repositorio (0.581768ms)
+✔ UpdateFinding description invalidUnicode: error tipado y ningún acceso al repositorio (0.612247ms)
+✔ CreateFinding severity invalidSeverity: error tipado y ningún acceso al repositorio (0.522481ms)
+✔ UpdateFinding severity invalidSeverity: error tipado y ningún acceso al repositorio (0.486806ms)
+✔ GetAudits dirección inválida caso 0: error tipado y ningún acceso al repositorio (0.718121ms)
+✔ GetFindings dirección inválida caso 0: error tipado y ningún acceso al repositorio (0.881022ms)
+✔ GetAudits dirección inválida caso 1: error tipado y ningún acceso al repositorio (0.570992ms)
+✔ GetFindings dirección inválida caso 1: error tipado y ningún acceso al repositorio (0.529227ms)
+✔ GetAudits dirección inválida caso 2: error tipado y ningún acceso al repositorio (0.442672ms)
+✔ GetFindings dirección inválida caso 2: error tipado y ningún acceso al repositorio (0.400414ms)
+✔ GetAudits dirección inválida caso 3: error tipado y ningún acceso al repositorio (0.427339ms)
+✔ GetFindings dirección inválida caso 3: error tipado y ningún acceso al repositorio (0.39652ms)
+✔ GetAudits dirección inválida caso 4: error tipado y ningún acceso al repositorio (0.494181ms)
+✔ GetFindings dirección inválida caso 4: error tipado y ningún acceso al repositorio (0.403813ms)
+✔ GetAudits dirección inválida caso 5: error tipado y ningún acceso al repositorio (0.416264ms)
+✔ GetFindings dirección inválida caso 5: error tipado y ningún acceso al repositorio (0.622397ms)
+✔ GetAudits dirección inválida caso 6: error tipado y ningún acceso al repositorio (0.741635ms)
+✔ GetFindings dirección inválida caso 6: error tipado y ningún acceso al repositorio (0.692155ms)
+✔ ResolveFinding acción inválida required 0: error tipado y ningún acceso al repositorio (1.01078ms)
+✔ ResolveFinding acción inválida required 3: error tipado y ningún acceso al repositorio (5.210561ms)
+✔ ResolveFinding acción inválida tooShort 9: error tipado y ningún acceso al repositorio (0.63388ms)
+✔ ResolveFinding acción inválida tooShort 18: error tipado y ningún acceso al repositorio (0.750688ms)
+✔ ResolveFinding acción inválida tooLong 257: error tipado y ningún acceso al repositorio (0.573699ms)
+✔ ResolveFinding acción inválida invalidUnicode 10: error tipado y ningún acceso al repositorio (0.451961ms)
+✔ update identidad inválida id: error tipado y ningún acceso al repositorio (0.826357ms)
+✔ update identidad inválida audit: error tipado y ningún acceso al repositorio (0.428142ms)
+✔ resolve identidad inválida id: error tipado y ningún acceso al repositorio (0.493257ms)
+✔ resolve identidad inválida audit: error tipado y ningún acceso al repositorio (0.393252ms)
+✔ close identidad inválida id: error tipado y ningún acceso al repositorio (0.443735ms)
+✔ close identidad inválida audit: error tipado y ningún acceso al repositorio (0.48105ms)
+✔ CreateFinding auditoría inválida: error tipado y ningún acceso al repositorio (1.255045ms)
+✔ límites válidos: u64, UTF-8, scalars Unicode y trim de Rust (4.015403ms)
+✔ consultas vacías legítimas y errores inesperados no se convierten en éxito (2.12115ms)
+✔ el rechazo del programa y su firma se conservan sin traducirlos a validación UX (1.305735ms)
+✔ composición expone los siete casos y no conecta adaptadores ni pantallas (1.723846ms)
+✔ normalizar texto conserva el DTO original inmutable (0.863945ms)
+✔ GetAudit: consulta detalle, ausencia y errores sin adaptar datos (1.821909ms)
+ℹ tests 75
+ℹ suites 0
+ℹ pass 75
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 639.102062
+
+> khiputrace@0.1.0 test:infrastructure
+> node scripts/test-infrastructure.mjs
+
+✔ IDL coincide con Rust, sus discriminators y cinco instrucciones (14.168688ms)
+✔ PDAs e IDs u64 little-endian, sin conversión a number (306.280695ms)
+✔ mapeos Audit/Finding preservan u64, enums y acción correctiva (38.01558ms)
+✔ IDL decodifica cuentas reales de la evidencia SBF 1.3, sin presentarlas como Devnet (80.804171ms)
+✔ lecturas y listados validan cuentas y filtros, y distinguen ausencia de fallo RPC (60.90442ms)
+✔ rechaza owner, discriminator, espacio y PDA al leer (33.004973ms)
+✔ configuración sin Program ID por defecto, coherente con IDL y redes permitidas (27.088237ms)
+✔ cinco escrituras usan instrucciones tipadas, PDAs y confirmación con blockhash (321.137089ms)
+✔ no devuelve éxito antes de confirmar (65.073716ms)
+✔ errores confirmados y confirmación incierta conservan firma sin éxito ni reenvío (135.310169ms)
+✔ errores Anchor de simulación y rechazo de wallet no se confunden con confirmación (70.77241ms)
+✔ wallet modificada o red cambiada durante firma se rechazan antes del envío (75.538917ms)
+✔ transporte JSON-RPC real de web3.js funciona con jayson corregido y respuestas sintéticas (104.606617ms)
+✔ cambio de wallet o firma ausente se rechazan sin enviar (98.002833ms)
+✔ el programa debe ser ejecutable, el genesis Devnet debe coincidir y entradas inválidas fallan (32.734372ms)
+✔ cambio de wallet durante la última comprobación RPC impide el envío (46.717758ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2603.692585
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 59 modules transformed.
+rendering chunks...
+computing gzip size...
+.cache/infrastructure-browser/infrastructure.js  643.71 kB │ gzip: 160.92 kB
+
+✓ built in 1.26s
+
+> khiputrace@0.1.0 typecheck
+> npm run typecheck --workspace frontend
+
+
+> @khiputrace/frontend@0.1.0 typecheck
+> tsc --noEmit
+
+
+> khiputrace@0.1.0 build
+> npm run build --workspace frontend
+
+
+> @khiputrace/frontend@0.1.0 build
+> vite build
+
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 113 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                              0.91 kB │ gzip:  0.47 kB
+dist/assets/index-CeayrxsR.css              21.83 kB │ gzip:  5.69 kB
+dist/assets/config-C1Ua-OUY.js               0.05 kB │ gzip:  0.06 kB
+dist/assets/index.browser.esm-ByQr01pV.js    0.11 kB │ gzip:  0.11 kB
+dist/assets/errors-CEX1pzaQ.js               0.19 kB │ gzip:  0.15 kB
+dist/assets/constraints-mILCPDte.js          0.25 kB │ gzip:  0.15 kB
+dist/assets/config-CSuDJbqK.js               6.17 kB │ gzip:  1.81 kB
+dist/assets/buffer-8Q1EtQxw.js              27.73 kB │ gzip:  8.55 kB
+dist/assets/client-CrF4_dpE.js             165.91 kB │ gzip: 48.01 kB
+dist/assets/index.browser.esm-DmIQ3dew.js  278.62 kB │ gzip: 79.53 kB
+dist/assets/index-CEWR9A5B.js              279.17 kB │ gzip: 85.03 kB
+
+✓ built in 1.25s
+
+> khiputrace@0.1.0 check:rust
+> node scripts/check-rust.mjs
+
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.32s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.30s
+     Running unittests src/lib.rs (target/debug/deps/khiputrace-0c8b9082b2a5441a)
+
+running 1 test
+test test_id ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/instructions.rs (target/debug/deps/instructions-73d9c6d9b11b6b9b)
+
+running 9 tests
+test close_preparation_preserves_sequence_and_rejects_open_or_corrupt_accounts ... ok
+test all_mutation_contexts_accept_valid_accounts_and_reject_unauthorized_signers ... ok
+test failed_native_dispatch_preserves_serialized_state ... ok
+test native_dispatch_updates_content_and_resolves_with_serialized_results ... ok
+test contexts_reject_foreign_relationship_unknown_versions_and_unissued_ids ... ok
+test update_and_resolution_reject_invalid_state_and_counter_underflow_before_mutation ... ok
+test contexts_reject_illegal_states_and_enforce_least_write_privileges ... ok
+test remediation_counts_unicode_characters_and_also_limits_utf8_bytes ... ok
+test contexts_reject_wrong_owner_discriminator_pda_and_canonical_bumps ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/layout.rs (target/debug/deps/layout-9e818867e08240f0)
+
+running 1 test
+test maximum_utf8_payload_fits_planned_account_allocation ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/models.rs (target/debug/deps/models-db33b54c2e757ba9)
+
+running 13 tests
+test creation_counters_preserve_sequence_and_reject_stale_ids_and_overflow ... ok
+test creation_contexts_reject_a_missing_authority_signature ... ok
+test account_deserializer_rejects_a_finding_as_an_audit ... ok
+test enum_encodings_are_stable_and_unknown_variants_fail ... ok
+test account_roundtrip_includes_discriminator_and_reads_publicly ... ok
+test creation_initializes_only_allowed_fields_and_normalizes_text ... ok
+test pda_ids_are_eight_byte_little_endian_and_namespaces_are_isolated ... ok
+test read_finding_rejects_wrong_owner_pda_bump_and_version ... ok
+test read_rejects_foreign_audit_and_unissued_finding_id ... ok
+test read_rejects_unknown_schema_inconsistent_counters_and_truncation ... ok
+test text_rules_reject_empty_and_oversize_utf8_without_truncation ... ok
+test read_rejects_valid_but_noncanonical_pda_pair ... ok
+test read_rejects_wrong_owner_discriminator_address_and_bump ... ok
+
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/main.rs (target/debug/deps/khiputrace_idl-3fc760dfab157b90)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests khiputrace
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+Rust host verificado. Esto no ejecuta build SBF, IDL ni pruebas on-chain.

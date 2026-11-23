@@ -1,0 +1,39 @@
+{
+  "startedAtUtc": "2026-11-23T02:29:17.221Z",
+  "programId": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+  "network": "devnet",
+  "endpoint": "https://api.devnet.solana.com/",
+  "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+  "auditAddress": "6dXLqe3dS9MtDvQspXyjF9FvEwP4BqGUXpZvF1a1Kaob",
+  "auditId": "202611220401",
+  "title": "Verificación sintética KhipuTrace Devnet 4.1",
+  "before": null,
+  "balanceBeforeLamports": 8608193600,
+  "signature": "3uoFNMRYuVwx8SGZzBGVa5nukookgXHqiY7NayWaEPzNNXYwfaZdGpc7WpwmEEnfy3FwW6chAMUgVmdnkcEC8Y3C",
+  "confirmedByRepository": true,
+  "after": {
+    "address": "6dXLqe3dS9MtDvQspXyjF9FvEwP4BqGUXpZvF1a1Kaob",
+    "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+    "id": "202611220401",
+    "title": "Verificación sintética KhipuTrace Devnet 4.1",
+    "nextFindingId": "0",
+    "findingCount": "0",
+    "openFindingCount": "0"
+  },
+  "slot": 525281228,
+  "transactionError": null,
+  "transactionFeeLamports": 5000,
+  "logs": [
+    "Program GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv invoke [1]",
+    "Program log: Instruction: CreateAudit",
+    "Program 11111111111111111111111111111111 invoke [2]",
+    "Program 11111111111111111111111111111111 success",
+    "Program GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv consumed 10779 of 200000 compute units",
+    "Program GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv success"
+  ],
+  "balanceAfterLamports": 8606654440,
+  "totalSpentSincePreflightLamports": 1393345560,
+  "explorer": "https://explorer.solana.com/tx/3uoFNMRYuVwx8SGZzBGVa5nukookgXHqiY7NayWaEPzNNXYwfaZdGpc7WpwmEEnfy3FwW6chAMUgVmdnkcEC8Y3C?cluster=devnet",
+  "completedAtUtc": "2026-11-23T02:29:23.188Z",
+  "verified": true
+}

@@ -1,0 +1,20 @@
+{
+  "extends": "../../frontend/tsconfig.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "verbatimModuleSyntax": false,
+    "noEmit": false,
+    "outDir": "../../.cache/infrastructure-tests",
+    "rootDir": "../..",
+    "types": [
+      "node"
+    ],
+    "esModuleInterop": true
+  },
+  "include": [
+    "./*.ts",
+    "../../frontend/src/infrastructure/**/*.ts",
+    "../../frontend/src/domain/**/*.ts"
+  ]
+}

@@ -1,0 +1,6 @@
+APROBADA create-audit
+APROBADA read-audit
+APROBADA create-second-audit
+APROBADA create-finding
+APROBADA read-findings
+fetch failed

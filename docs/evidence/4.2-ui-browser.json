@@ -1,0 +1,164 @@
+{
+  "config": {
+    "argv": [
+      "/home/dani/.nvm/versions/node/v24.22.0/bin/node",
+      "/home/dani/Documentos/PROYECTOS/KHIPUTRACE/node_modules/@playwright/test/cli.js",
+      "test",
+      "--config",
+      "playwright.devnet.config.ts"
+    ],
+    "configFile": "/home/dani/Documentos/PROYECTOS/KHIPUTRACE/playwright.devnet.config.ts",
+    "rootDir": "/home/dani/Documentos/PROYECTOS/KHIPUTRACE/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/dani/Documentos/PROYECTOS/KHIPUTRACE/.cache/devnet-ui-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/home/dani/Documentos/PROYECTOS/KHIPUTRACE/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "devnet.spec.ts"
+        ],
+        "timeout": 300000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/dani/Documentos/PROYECTOS/KHIPUTRACE/.cache/devnet-ui-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/home/dani/Documentos/PROYECTOS/KHIPUTRACE/tests/browser",
+        "snapshotDir": "/home/dani/Documentos/PROYECTOS/KHIPUTRACE/tests/browser",
+        "testIgnore": [],
+        "testMatch": "devnet.spec.ts",
+        "timeout": 300000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4182",
+          "channel": "chrome",
+          "headless": true,
+          "viewport": {
+            "width": 1440,
+            "height": 1080
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/evidence/4.2-ui-browser.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run build --workspace frontend -- --outDir ../.cache/devnet-ui-preview --emptyOutDir && npm run preview --workspace frontend -- --host 127.0.0.1 --port 4182 --strictPort --outDir ../.cache/devnet-ui-preview",
+      "url": "http://127.0.0.1:4182",
+      "reuseExistingServer": false,
+      "env": {
+        "VITE_KHIPUTRACE_PROGRAM_ID": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+        "VITE_KHIPUTRACE_CLUSTER": "devnet",
+        "VITE_KHIPUTRACE_RPC_URL": "https://api.devnet.solana.com"
+      }
+    }
+  },
+  "suites": [
+    {
+      "title": "devnet.spec.ts",
+      "file": "devnet.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Devnet real: UI de producción, ciclo completo y rechazo Rust visible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 74361,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [
+                    {
+                      "text": "Server responded with 429 Too Many Requests.  Retrying after 500ms delay...\n"
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2026-11-23T02:51:47.515Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3ebb3321d2876f39c2c-70928a404d518fb25dc1",
+          "file": "devnet.spec.ts",
+          "line": 14,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-23T02:51:36.883Z",
+    "duration": 87680.727,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

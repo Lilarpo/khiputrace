@@ -1,0 +1,176 @@
+{
+  "environment": "LiteSVM local; RPC m\u00ednimo de pruebas, no Devnet ni validador",
+  "program": "3ntLzGokkxHGrNX5BDskidyew4Cn3RqL29ECUDo2ZCy1",
+  "sbf_sha256": "6dee51ea9164dbd31aae844cd696e8475f41a6eda21d1d589b4f75dee5142e6f",
+  "transactions": [
+    {
+      "signature": "34qaqV7ywdxLw5yVjpxWBVhruEWbC2LpxWp4pXUZ4nzMFykJKDo3sRs7j5aNRX7N1HU4pkuNPNnu1KvkMxCJBe3b",
+      "signature_kind": "executed_in_vm",
+      "error": null,
+      "logs": [
+        "Program 3ntLzGokkxHGrNX5BDskidyew4Cn3RqL29ECUDo2ZCy1 invoke [1]",
+        "Program log: Instruction: CreateAudit",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program 3ntLzGokkxHGrNX5BDskidyew4Cn3RqL29ECUDo2ZCy1 consumed 9241 of 200000 compute units",
+        "Program 3ntLzGokkxHGrNX5BDskidyew4Cn3RqL29ECUDo2ZCy1 success"
+      ],
+      "before": {
+        "bg3h3dcdvEAif2PfeTJiGx8h6ToiiyYoHR1FaiaBvHr": {
+          "lamports": 1000000000,
+          "owner": "11111111111111111111111111111111",
+          "executable": false,
+          "rentEpoch": 0,
+          "data": [
+            "",
+            "base64"
+          ]
+        },
+        "3tXMBveupBPm1xCuBvynLPGkyi5xK8uYD1kgosGhi7Uk": null,
+        "11111111111111111111111111111111": {
+          "lamports": 1,
+          "owner": "NativeLoader1111111111111111111111111111111",
+          "executable": true,
+          "rentEpoch": 0,
+          "data_sha256": "d8e11c483f20607a1e5f015d768e4dd294213e33b948a69640f7bacaaf25e280"
+        },
+        "3ntLzGokkxHGrNX5BDskidyew4Cn3RqL29ECUDo2ZCy1": {
+          "lamports": 1903532160,
+          "owner": "BPFLoader2111111111111111111111111111111111",
+          "executable": true,
+          "rentEpoch": 0,
+          "data_sha256": "6dee51ea9164dbd31aae844cd696e8475f41a6eda21d1d589b4f75dee5142e6f"
+        }
+      },
+      "after": {
+        "bg3h3dcdvEAif2PfeTJiGx8h6ToiiyYoHR1FaiaBvHr": {
+          "lamports": 997893080,
+          "owner": "11111111111111111111111111111111",
+          "executable": false,
+          "rentEpoch": 0,
+          "data": [
+            "",
+            "base64"
+          ]
+        },
+        "3tXMBveupBPm1xCuBvynLPGkyi5xK8uYD1kgosGhi7Uk": {
+          "lamports": 2101920,
+          "owner": "3ntLzGokkxHGrNX5BDskidyew4Cn3RqL29ECUDo2ZCy1",
+          "executable": false,
+          "rentEpoch": 0,
+          "data": [
+            "8kHKk41n/YYBCOHlu+9z1lmAf0QOqsv6xWVptDu0LHSpPMDPgtukOMUBAAAAAAAgABkAAABBdWRpdG9yw61hIEUyRSBzaW50w6l0aWNhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "base64"
+          ]
+        },
+        "11111111111111111111111111111111": {
+          "lamports": 1,
+          "owner": "NativeLoader1111111111111111111111111111111",
+          "executable": true,
+          "rentEpoch": 0,
+          "data_sha256": "d8e11c483f20607a1e5f015d768e4dd294213e33b948a69640f7bacaaf25e280"
+        },
+        "3ntLzGokkxHGrNX5BDskidyew4Cn3RqL29ECUDo2ZCy1": {
+          "lamports": 1903532160,
+          "owner": "BPFLoader2111111111111111111111111111111111",
+          "executable": true,
+          "rentEpoch": 0,
+          "data_sha256": "6dee51ea9164dbd31aae844cd696e8475f41a6eda21d1d589b4f75dee5142e6f"
+        }
+      }
+    },
+    {
+      "signature": "554Z9nQUjGmwPjZn4FXqAoQqRFehXjPxFsbEacBkj7cPhmEVNXZM5GeTWqsC4Lnmj5oLkvfyMTTCTwyVBCLhw2QQ",
+      "signature_kind": "prepared_not_submitted",
+      "error": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 0
+          }
+        ]
+      },
+      "logs": [
+        "Program 3ntLzGokkxHGrNX5BDskidyew4Cn3RqL29ECUDo2ZCy1 invoke [1]",
+        "Program log: Instruction: CreateAudit",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Allocate: account Address { address: 3tXMBveupBPm1xCuBvynLPGkyi5xK8uYD1kgosGhi7Uk, base: None } already in use",
+        "Program 11111111111111111111111111111111 failed: custom program error: 0x0",
+        "Program 3ntLzGokkxHGrNX5BDskidyew4Cn3RqL29ECUDo2ZCy1 consumed 6918 of 200000 compute units",
+        "Program 3ntLzGokkxHGrNX5BDskidyew4Cn3RqL29ECUDo2ZCy1 failed: custom program error: 0x0"
+      ],
+      "before": {
+        "bg3h3dcdvEAif2PfeTJiGx8h6ToiiyYoHR1FaiaBvHr": {
+          "lamports": 997893080,
+          "owner": "11111111111111111111111111111111",
+          "executable": false,
+          "rentEpoch": 0,
+          "data": [
+            "",
+            "base64"
+          ]
+        },
+        "3tXMBveupBPm1xCuBvynLPGkyi5xK8uYD1kgosGhi7Uk": {
+          "lamports": 2101920,
+          "owner": "3ntLzGokkxHGrNX5BDskidyew4Cn3RqL29ECUDo2ZCy1",
+          "executable": false,
+          "rentEpoch": 0,
+          "data": [
+            "8kHKk41n/YYBCOHlu+9z1lmAf0QOqsv6xWVptDu0LHSpPMDPgtukOMUBAAAAAAAgABkAAABBdWRpdG9yw61hIEUyRSBzaW50w6l0aWNhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "base64"
+          ]
+        },
+        "11111111111111111111111111111111": {
+          "lamports": 1,
+          "owner": "NativeLoader1111111111111111111111111111111",
+          "executable": true,
+          "rentEpoch": 0,
+          "data_sha256": "d8e11c483f20607a1e5f015d768e4dd294213e33b948a69640f7bacaaf25e280"
+        },
+        "3ntLzGokkxHGrNX5BDskidyew4Cn3RqL29ECUDo2ZCy1": {
+          "lamports": 1903532160,
+          "owner": "BPFLoader2111111111111111111111111111111111",
+          "executable": true,
+          "rentEpoch": 0,
+          "data_sha256": "6dee51ea9164dbd31aae844cd696e8475f41a6eda21d1d589b4f75dee5142e6f"
+        }
+      },
+      "after": {
+        "bg3h3dcdvEAif2PfeTJiGx8h6ToiiyYoHR1FaiaBvHr": {
+          "lamports": 997893080,
+          "owner": "11111111111111111111111111111111",
+          "executable": false,
+          "rentEpoch": 0,
+          "data": [
+            "",
+            "base64"
+          ]
+        },
+        "3tXMBveupBPm1xCuBvynLPGkyi5xK8uYD1kgosGhi7Uk": {
+          "lamports": 2101920,
+          "owner": "3ntLzGokkxHGrNX5BDskidyew4Cn3RqL29ECUDo2ZCy1",
+          "executable": false,
+          "rentEpoch": 0,
+          "data": [
+            "8kHKk41n/YYBCOHlu+9z1lmAf0QOqsv6xWVptDu0LHSpPMDPgtukOMUBAAAAAAAgABkAAABBdWRpdG9yw61hIEUyRSBzaW50w6l0aWNhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "base64"
+          ]
+        },
+        "11111111111111111111111111111111": {
+          "lamports": 1,
+          "owner": "NativeLoader1111111111111111111111111111111",
+          "executable": true,
+          "rentEpoch": 0,
+          "data_sha256": "d8e11c483f20607a1e5f015d768e4dd294213e33b948a69640f7bacaaf25e280"
+        },
+        "3ntLzGokkxHGrNX5BDskidyew4Cn3RqL29ECUDo2ZCy1": {
+          "lamports": 1903532160,
+          "owner": "BPFLoader2111111111111111111111111111111111",
+          "executable": true,
+          "rentEpoch": 0,
+          "data_sha256": "6dee51ea9164dbd31aae844cd696e8475f41a6eda21d1d589b4f75dee5142e6f"
+        }
+      }
+    }
+  ]
+}

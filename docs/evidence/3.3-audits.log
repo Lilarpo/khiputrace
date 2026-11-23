@@ -1,0 +1,29 @@
+
+> khiputrace@0.1.0 test:audits
+> tsc -p tests/browser/tsconfig.json --noEmit && playwright test --config playwright.audit.config.ts
+
+[WebServer] (node:27648) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:27687) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:27723) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 10 tests using 1 worker
+
+(node:27746) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:27626) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/browser/audits.spec.ts:27:1 › SBF real: validar, firmar, confirmar, refrescar, leer detalle y rechazar ID duplicado (9.5s)
+  ✓   2 tests/browser/audits.spec.ts:77:1 › firma rechazada no envía transacción ni crea datos (4.2s)
+  ✓   3 tests/browser/audits.spec.ts:86:1 › desconexión durante firma retira formulario e ignora resultado tardío (4.1s)
+  ✓   4 tests/browser/audits.spec.ts:105:1 › componentes: límites UTF-8/u64 y revisión normalizada, sin firma al editar (3.6s)
+  ✓   5 tests/browser/audits.spec.ts:121:1 › componentes: resultado incierto conserva firma y bloquea nuevo envío (3.1s)
+  ✓   6 tests/browser/audits.spec.ts:130:1 › componentes: fallo al refrescar no transforma una confirmación en fracaso (2.8s)
+  ✓   7 tests/browser/audits.spec.ts:139:3 › componentes: detalle normal y contadores de cuenta (2.5s)
+  ✓   8 tests/browser/audits.spec.ts:139:3 › componentes: detalle missing y contadores de cuenta (2.4s)
+  ✓   9 tests/browser/audits.spec.ts:139:3 › componentes: detalle detail-error y contadores de cuenta (2.4s)
+  ✓  10 tests/browser/audits.spec.ts:154:1 › wallet que altera el mensaje firmado es rechazada antes del envío (3.8s)
+
+  10 passed (54.0s)

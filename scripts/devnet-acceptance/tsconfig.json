@@ -1,0 +1,5 @@
+{
+  "extends": "../devnet-smoke/tsconfig.json",
+  "compilerOptions": { "outDir": "../../.cache/devnet-acceptance" },
+  "include": ["./run.ts"]
+}

@@ -1,0 +1,4 @@
+
+> khiputrace@0.1.0 test:devnet
+> node scripts/check-devnet-acceptance.mjs
+

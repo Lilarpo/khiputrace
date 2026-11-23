@@ -1,0 +1,81 @@
+{
+  "checkedAtUtc": "2026-11-23T03:17:15.494918+00:00",
+  "status": "review_complete_with_documented_residual_risks",
+  "findings": {
+    "critical": 0,
+    "high": 0,
+    "mediumOpen": 2,
+    "lowOpen": 2,
+    "lowFixed": 1
+  },
+  "verify": {
+    "scaffold": 4,
+    "application": 75,
+    "infrastructure": 16,
+    "rustHost": 24,
+    "total": 119,
+    "exitCode": 0
+  },
+  "sbf": {
+    "cases": 17,
+    "transactions": 95,
+    "successful": 50,
+    "rejected": 45,
+    "exitCode": 0
+  },
+  "browser": {
+    "base": {
+      "startTime": "2026-11-23T03:09:14.115Z",
+      "duration": 70541.767,
+      "expected": 11,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "audits": {
+      "startTime": "2026-11-23T03:09:43.480Z",
+      "duration": 70523.75499999999,
+      "expected": 10,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "findings": {
+      "startTime": "2026-11-23T03:12:26.676Z",
+      "duration": 97918.172,
+      "expected": 9,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "idlCheckExitCode": 0,
+  "devnetHarnessTypeChecksExitCode": 0,
+  "npmAuditKnownVulnerabilities": 0,
+  "rustRegistryPackagesCheckedWithOSV": 158,
+  "rustOSVRawMatches": 2,
+  "rustOSVTriage": [
+    "bincode unmaintained; low residual risk",
+    "borsh 0.10.4 fixed per RustSec; aggregate false positive"
+  ],
+  "devnetReadOnly": {
+    "status": "passed",
+    "genesis": "EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG",
+    "slot": 525293039,
+    "programData": "26Ro9jtk13JNZtmigtZXSKH7BXPDY9i6LThWKgZeRiuz",
+    "sameElf": true,
+    "expectedUpgradeAuthority": true,
+    "writes": 0
+  },
+  "secretCandidatesInLimitedPatternScan": 0,
+  "historicalEvidenceFilesUnchanged": 88,
+  "gitCheckExitCode": 128,
+  "limits": [
+    "No professional audit or certification",
+    "Native wallet extension/manual review pending",
+    "No validator consensus/concurrency, fuzzing or formal verification",
+    "No Git history available; secret scan limited to documented local scope",
+    "Single upgrade authority and unmaintained bincode remain",
+    "No Devnet writes, deployments, pushes or global changes"
+  ]
+}

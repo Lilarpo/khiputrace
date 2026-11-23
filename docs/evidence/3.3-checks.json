@@ -1,0 +1,133 @@
+{
+  "scope": "Programa SBF real en LiteSVM local. No Devnet, validador o extensión real.",
+  "browser_stats": {
+    "3.3-base": {
+      "startTime": "2026-11-23T01:48:09.556Z",
+      "duration": 47463.956000000006,
+      "expected": 11,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "3.3-audits": {
+      "startTime": "2026-11-23T01:49:27.128Z",
+      "duration": 53998.068999999996,
+      "expected": 10,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "3.3": {
+      "startTime": "2026-11-23T01:50:51.060Z",
+      "duration": 68100.80399999999,
+      "expected": 9,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "successful_vm_executions": 13,
+  "rejected_preflight_simulations": 3,
+  "audit_counters_order": [
+    "next_finding_id",
+    "active_findings",
+    "open_findings"
+  ],
+  "audit_counter_sequence": [
+    [
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      "1",
+      "1"
+    ],
+    [
+      "1",
+      "1",
+      "1"
+    ],
+    [
+      "1",
+      "1",
+      "0"
+    ],
+    [
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "2",
+      "1",
+      "1"
+    ]
+  ],
+  "finding_states": [
+    {
+      "transaction": 1,
+      "address": "8HNNYn1GjqB54qhP5w3H67LonzkpCZ5fpwy5ECqSzA3x",
+      "id": "0",
+      "severity": 2,
+      "status": 0,
+      "title": "Riesgo sintético",
+      "description": "Descripción sintética del riesgo identificado",
+      "action": "",
+      "canonical_bump": 254
+    },
+    {
+      "transaction": 2,
+      "address": "8HNNYn1GjqB54qhP5w3H67LonzkpCZ5fpwy5ECqSzA3x",
+      "id": "0",
+      "severity": 3,
+      "status": 0,
+      "title": "Riesgo actualizado",
+      "description": "Descripción sintética del riesgo identificado",
+      "action": "",
+      "canonical_bump": 254
+    },
+    {
+      "transaction": 3,
+      "address": "8HNNYn1GjqB54qhP5w3H67LonzkpCZ5fpwy5ECqSzA3x",
+      "id": "0",
+      "severity": 3,
+      "status": 1,
+      "title": "Riesgo actualizado",
+      "description": "Descripción sintética del riesgo identificado",
+      "action": "Corrección sintética verificada en revisión",
+      "canonical_bump": 254
+    },
+    {
+      "transaction": 5,
+      "address": "BNVUjUMsnFx2TumrubpA3KTu1kF7gmGkdZQfSYP97v7w",
+      "id": "1",
+      "severity": 0,
+      "status": 0,
+      "title": "Segundo hallazgo",
+      "description": "Descripción sintética del riesgo identificado",
+      "action": "",
+      "canonical_bump": 255
+    }
+  ],
+  "closed_account_zeroed_and_system_owned": true,
+  "closed_account_tombstone": {
+    "lamports": 0,
+    "owner": "11111111111111111111111111111111",
+    "executable": false,
+    "rentEpoch": 0,
+    "data": [
+      "",
+      "base64"
+    ]
+  },
+  "authority_net_refund_lamports": 9126520,
+  "rejected_codes": [
+    6008,
+    6005,
+    6003
+  ],
+  "all_rejections_preserve_accounts": true,
+  "sbf_matches_1_3": true
+}

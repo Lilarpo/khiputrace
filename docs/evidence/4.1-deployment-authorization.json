@@ -1,0 +1,14 @@
+{
+  "recordedAtUtc": "2026-11-23T02:24:20.188323+00:00",
+  "authorization": "Usuario: si autorizo",
+  "network": "devnet",
+  "spendLimitLamports": 3000000000,
+  "programId": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+  "artifactSha256": "c941ab95d5cbfc6ae9ec73683dec79e24b0a60f11c505e7a173555b44eb08f17",
+  "initialBalanceLamports": 10000000000,
+  "status": "Despliegue CLI iniciado; resultado remoto pendiente de comprobación",
+  "auxiliaryRpcError": {
+    "code": 429,
+    "message": "Connection rate limits exceeded"
+  }
+}

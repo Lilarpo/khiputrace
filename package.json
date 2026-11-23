@@ -1,0 +1,49 @@
+{
+  "name": "khiputrace",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.22.0 <25",
+    "npm": ">=11 <12"
+  },
+  "packageManager": "npm@11.19.1",
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "setup:program-tests": "python3 scripts/setup-sbf-tests.py",
+    "test:program": "python3 scripts/test-sbf.py",
+    "verify": "npm run check:architecture && npm run test:scaffold && npm run test:application && npm run test:infrastructure && npm run typecheck && npm run build && npm run check:rust",
+    "check:architecture": "node scripts/check-architecture.mjs",
+    "test:scaffold": "node --test tests/scaffold/*.test.mjs",
+    "typecheck": "npm run typecheck --workspace frontend",
+    "build": "npm run build --workspace frontend",
+    "dev": "npm run dev --workspace frontend",
+    "check:rust": "node scripts/check-rust.mjs",
+    "check:dependencies": "npm audit --audit-level=moderate",
+    "check:toolchain": "node scripts/check-toolchain.mjs",
+    "generate:idl": "node scripts/generate-idl.mjs",
+    "test:infrastructure": "node scripts/test-infrastructure.mjs",
+    "check:idl": "node scripts/generate-idl.mjs --check",
+    "test:application": "node scripts/test-application.mjs",
+    "test:visual": "tsc -p tests/browser/tsconfig.json --noEmit && playwright test",
+    "test:audits": "tsc -p tests/browser/tsconfig.json --noEmit && playwright test --config playwright.audit.config.ts",
+    "test:findings": "tsc -p tests/browser/tsconfig.json --noEmit && playwright test --config playwright.finding.config.ts",
+    "test:devnet": "node scripts/check-devnet-acceptance.mjs",
+    "test:devnet-ui": "node scripts/check-devnet-ui.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1",
+    "typescript": "5.9.3",
+    "ws": "7.5.14"
+  },
+  "overrides": {
+    "@anchor-lang/core": {
+      "toml": "5.0.1"
+    },
+    "@solana/web3.js": {
+      "jayson": "5.0.0"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+[2026-11-23T02:00:33.919077009Z WARN  cargo_build_sbf] Package 'khiputrace' has two crate types defined: cdylib and lib. This setting precludes link-time optimizations (LTO). Use cdylib for programs to be deployed and rlib for packages to be imported by other programs as libraries.
+    Finished `release` profile [optimized] target(s) in 6.65s
+[2026-11-23T02:00:42.027343959Z WARN  cargo_build_sbf::post_processing] The following functions are undefined and not known syscalls ["abort", "sol_log_", "sol_memcpy_", "sol_invoke_signed_rust", "sol_get_rent_sysvar", "sol_memset_", "sol_try_find_program_address", "sol_log_pubkey", "sol_sha256"].
+[2026-11-23T02:00:42.027397253Z WARN  cargo_build_sbf::post_processing]          Calling them will trigger a run-time error.

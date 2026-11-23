@@ -1,0 +1,10 @@
+{
+  "checkedAtUtc": "2026-11-23T02:35:27.362995+00:00",
+  "sbfSourceStillMatchesTestedSource": true,
+  "elfMatchesSbfTestsAndOnChainCode": true,
+  "idlAndFrontendConfigMatchDeployment": true,
+  "productionBundleContainsProgramId": true,
+  "deploymentAndCreateAuditFinalizedWithoutErrors": true,
+  "budgetRespected": true,
+  "smokeEvidenceStillVerifiedAfterRepeatGuard": true
+}

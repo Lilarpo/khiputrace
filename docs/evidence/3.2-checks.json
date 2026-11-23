@@ -1,0 +1,33 @@
+{
+  "browser_stats": {
+    "3.2-browser.json": {
+      "startTime": "2026-11-23T01:26:29.217Z",
+      "duration": 51049.992,
+      "expected": 10,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "3.2-base-browser.json": {
+      "startTime": "2026-11-23T01:25:12.802Z",
+      "duration": 49060.2,
+      "expected": 11,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "created_audit": {
+    "address": "9G2emm3MfinhF15GRgPpnMiXWXQxwQSXmHFTggFxjAgU",
+    "id": "9007199254740993",
+    "title": "Auditoría E2E sintética",
+    "next_finding_id": "0",
+    "active_findings": "0",
+    "open_findings": "0",
+    "canonical_bump": 255
+  },
+  "duplicate_preflight_accounts_unchanged": true,
+  "sbf_matches_1_3": true,
+  "historical_evidence_3_1_unchanged": true,
+  "scope": "Solo pruebas locales. Una ejecución VM exitosa y una simulación rechazada; no Devnet ni validador."
+}

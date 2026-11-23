@@ -1,0 +1,32 @@
+
+> khiputrace@0.1.0 test:program
+> python3 scripts/test-sbf.py
+
+[2026-11-23T02:04:46.057302960Z WARN  cargo_build_sbf] Package 'khiputrace' has two crate types defined: cdylib and lib. This setting precludes link-time optimizations (LTO). Use cdylib for programs to be deployed and rlib for packages to be imported by other programs as libraries.
+   Compiling khiputrace v0.1.0 (/home/dani/Documentos/PROYECTOS/KHIPUTRACE/programs/khiputrace)
+    Finished `release` profile [optimized] target(s) in 39.71s
+[2026-11-23T02:05:26.282273995Z WARN  cargo_build_sbf::post_processing] The following functions are undefined and not known syscalls ["abort", "sol_log_", "sol_memcpy_", "sol_invoke_signed_rust", "sol_get_rent_sysvar", "sol_memset_", "sol_try_find_program_address", "sol_log_pubkey", "sol_sha256"].
+[2026-11-23T02:05:26.282315806Z WARN  cargo_build_sbf::post_processing]          Calling them will trigger a run-time error.
+SBF SHA-256: c941ab95d5cbfc6ae9ec73683dec79e24b0a60f11c505e7a173555b44eb08f17
+test_complete_lifecycle_reads_counters_refund_and_monotonic_ids (test_program.ProgramTests.test_complete_lifecycle_reads_counters_refund_and_monotonic_ids) ... ok
+test_counter_overflow_and_underflow_return_program_errors (test_program.ProgramTests.test_counter_overflow_and_underflow_return_program_errors) ... ok
+test_foreign_audit_combination_rejected_by_program (test_program.ProgramTests.test_foreign_audit_combination_rejected_by_program) ... ok
+test_incorrect_creation_pdas_rejected (test_program.ProgramTests.test_incorrect_creation_pdas_rejected) ... ok
+test_invalid_or_oversized_fields_rejected_after_init_and_update (test_program.ProgramTests.test_invalid_or_oversized_fields_rejected_after_init_and_update) ... ok
+test_invalid_remediation_keeps_finding_open_and_counters_intact (test_program.ProgramTests.test_invalid_remediation_keeps_finding_open_and_counters_intact) ... ok
+test_invalid_severity_rejected_during_instruction_deserialization (test_program.ProgramTests.test_invalid_severity_rejected_during_instruction_deserialization) ... ok
+test_later_failure_rolls_back_physical_close_and_refund (test_program.ProgramTests.test_later_failure_rolls_back_physical_close_and_refund) ... ok
+test_later_instruction_failure_rolls_back_resolution (test_program.ProgramTests.test_later_instruction_failure_rolls_back_resolution) ... ok
+test_missing_authority_signature_rejected_by_all_contexts (test_program.ProgramTests.test_missing_authority_signature_rejected_by_all_contexts) ... ok
+test_open_finding_cannot_close_and_closed_id_cannot_reinitialize (test_program.ProgramTests.test_open_finding_cannot_close_and_closed_id_cannot_reinitialize) ... ok
+test_refund_overflow_is_rejected_before_close (test_program.ProgramTests.test_refund_overflow_is_rejected_before_close) ... ok
+test_resolved_finding_cannot_be_updated_or_resolved_twice (test_program.ProgramTests.test_resolved_finding_cannot_be_updated_or_resolved_twice) ... ok
+test_stored_bump_and_schema_version_are_validated (test_program.ProgramTests.test_stored_bump_and_schema_version_are_validated) ... ok
+test_unauthorized_wallet_rejected_for_all_finding_mutations (test_program.ProgramTests.test_unauthorized_wallet_rejected_for_all_finding_mutations) ... ok
+test_valid_unicode_note_boundaries (test_program.ProgramTests.test_valid_unicode_note_boundaries) ... ok
+test_wrong_account_owner_is_rejected (test_program.ProgramTests.test_wrong_account_owner_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 3.281s
+
+OK

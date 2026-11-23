@@ -1,0 +1,46 @@
+
+> khiputrace@0.1.0 test:audits
+> tsc -p tests/browser/tsconfig.json --noEmit && playwright test --config playwright.audit.config.ts --grep SBF real
+
+[WebServer] (node:21355) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:21378) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[vite] connecting...
+[vite] connected.
+%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+DEBUG_CREATE ReferenceError: Buffer is not defined
+[WebServer] 9:18:31 PM [vite] (client) [console.error] DEBUG_CREATE ReferenceError: Buffer is not defined
+  ✘  1 tests/browser/audits.spec.ts:73:1 › SBF real: validar, firmar, confirmar, refrescar, leer detalle y rechazar ID duplicado (11.7s)
+
+
+  1) tests/browser/audits.spec.ts:73:1 › SBF real: validar, firmar, confirmar, refrescar, leer detalle y rechazar ID duplicado 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText('Firma y confirmación pendientes', { exact: true })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByText('Firma y confirmación pendientes', { exact: true }) with timeout 5000ms
+      - waiting for getByText('Firma y confirmación pendientes', { exact: true })
+
+
+      85 |   await expect(page.getByText('Tu wallet pagará', { exact: false })).toBeVisible();
+      86 |   await page.getByRole('button', { name: 'Firmar y crear auditoría' }).click();
+    > 87 |   await expect(page.getByText('Firma y confirmación pendientes', { exact: true })).toBeVisible();
+         |                                                                                    ^
+      88 |   expect((await evidence(page)).transactions.length).toBe(initial);
+      89 |   await expect(page.getByRole('button', { name: 'Esperando confirmación…' })).toBeDisabled();
+      90 |   await expect(page.locator('html')).toHaveAttribute('data-signing', 'pending');
+        at /home/dani/Documentos/PROYECTOS/KHIPUTRACE/tests/browser/audits.spec.ts:87:84
+
+    Error Context: .cache/audit-browser-results/audits-SBF-real-validar-fi-4e3ac-lle-y-rechazar-ID-duplicado/error-context.md
+
+  1 failed
+    tests/browser/audits.spec.ts:73:1 › SBF real: validar, firmar, confirmar, refrescar, leer detalle y rechazar ID duplicado 

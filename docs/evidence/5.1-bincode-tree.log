@@ -1,0 +1,47 @@
+bincode v1.3.3
+├── anchor-lang v0.32.2
+│   └── khiputrace v0.1.0 (/home/dani/Documentos/PROYECTOS/KHIPUTRACE/programs/khiputrace)
+├── solana-instruction v2.3.3
+│   ├── anchor-lang v0.32.2 (*)
+│   ├── solana-cpi v2.2.1
+│   │   ├── anchor-lang v0.32.2 (*)
+│   │   └── solana-stake-interface v1.2.1
+│   │       └── solana-sysvar v2.3.0
+│   │           └── anchor-lang v0.32.2 (*)
+│   ├── solana-instructions-sysvar v2.2.2
+│   │   ├── anchor-lang v0.32.2 (*)
+│   │   └── solana-sysvar v2.3.0 (*)
+│   ├── solana-invoke v0.4.0
+│   │   └── anchor-lang v0.32.2 (*)
+│   ├── solana-loader-v3-interface v3.0.0
+│   │   └── anchor-lang v0.32.2 (*)
+│   ├── solana-program-error v2.2.2
+│   │   ├── anchor-lang v0.32.2 (*)
+│   │   ├── solana-account-info v2.3.0
+│   │   │   ├── anchor-lang v0.32.2 (*)
+│   │   │   ├── solana-cpi v2.2.1 (*)
+│   │   │   ├── solana-instructions-sysvar v2.2.2 (*)
+│   │   │   ├── solana-invoke v0.4.0 (*)
+│   │   │   ├── solana-program-entrypoint v2.3.0
+│   │   │   │   ├── anchor-lang v0.32.2 (*)
+│   │   │   │   ├── solana-invoke v0.4.0 (*)
+│   │   │   │   └── solana-sysvar v2.3.0 (*)
+│   │   │   └── solana-sysvar v2.3.0 (*)
+│   │   ├── solana-cpi v2.2.1 (*)
+│   │   ├── solana-instructions-sysvar v2.2.2 (*)
+│   │   ├── solana-program-entrypoint v2.3.0 (*)
+│   │   ├── solana-program-pack v2.2.1
+│   │   │   └── anchor-lang v0.32.2 (*)
+│   │   ├── solana-stake-interface v1.2.1 (*)
+│   │   └── solana-sysvar v2.3.0 (*)
+│   ├── solana-serialize-utils v2.2.1
+│   │   └── solana-instructions-sysvar v2.2.2 (*)
+│   ├── solana-stable-layout v2.2.1
+│   │   └── solana-invoke v0.4.0 (*)
+│   ├── solana-stake-interface v1.2.1 (*)
+│   ├── solana-system-interface v1.0.0
+│   │   ├── anchor-lang v0.32.2 (*)
+│   │   ├── solana-loader-v3-interface v3.0.0 (*)
+│   │   └── solana-stake-interface v1.2.1 (*)
+│   └── solana-sysvar v2.3.0 (*)
+└── solana-sysvar v2.3.0 (*)

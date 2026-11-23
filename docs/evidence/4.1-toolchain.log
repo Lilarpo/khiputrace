@@ -1,0 +1,8 @@
+
+> khiputrace@0.1.0 check:toolchain
+> node scripts/check-toolchain.mjs
+
+anchor: esperado 0.32.2; observado no disponible
+solana: 2.3.0
+cargo-build-sbf: 2.3.0
+solana-test-validator: esperado 2.3.0; observado no disponible

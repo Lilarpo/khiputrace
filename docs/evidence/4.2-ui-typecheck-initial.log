@@ -1,0 +1,2 @@
+tests/browser/devnet.spec.ts(3,10): error TS6133: 'readFileSync' is declared but its value is never read.
+tests/browser/devnet.spec.ts(6,22): error TS6133: 'PublicKey' is declared but its value is never read.

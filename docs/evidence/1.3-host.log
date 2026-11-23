@@ -1,0 +1,60 @@
+$ cargo fmt --all -- --check
+$ cargo check --workspace --all-targets --locked -j 2
+    Checking khiputrace v0.1.0 (/home/dani/Documentos/PROYECTOS/KHIPUTRACE/programs/khiputrace)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.69s
+$ cargo test --workspace --locked -j 2
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.33s
+     Running unittests src/lib.rs (target/debug/deps/khiputrace-d2e3b56cb17fa270)
+
+running 1 test
+test test_id ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/instructions.rs (target/debug/deps/instructions-3cb601ec9018e89d)
+
+running 9 tests
+test close_preparation_preserves_sequence_and_rejects_open_or_corrupt_accounts ... ok
+test all_mutation_contexts_accept_valid_accounts_and_reject_unauthorized_signers ... ok
+test contexts_reject_illegal_states_and_enforce_least_write_privileges ... ok
+test failed_native_dispatch_preserves_serialized_state ... ok
+test native_dispatch_updates_content_and_resolves_with_serialized_results ... ok
+test update_and_resolution_reject_invalid_state_and_counter_underflow_before_mutation ... ok
+test remediation_counts_unicode_characters_and_also_limits_utf8_bytes ... ok
+test contexts_reject_wrong_owner_discriminator_pda_and_canonical_bumps ... ok
+test contexts_reject_foreign_relationship_unknown_versions_and_unissued_ids ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests/layout.rs (target/debug/deps/layout-25d6b58e0ffd2d79)
+
+running 1 test
+test maximum_utf8_payload_fits_planned_account_allocation ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/models.rs (target/debug/deps/models-eafbe30860529354)
+
+running 13 tests
+test account_deserializer_rejects_a_finding_as_an_audit ... ok
+test creation_counters_preserve_sequence_and_reject_stale_ids_and_overflow ... ok
+test creation_contexts_reject_a_missing_authority_signature ... ok
+test account_roundtrip_includes_discriminator_and_reads_publicly ... ok
+test creation_initializes_only_allowed_fields_and_normalizes_text ... ok
+test enum_encodings_are_stable_and_unknown_variants_fail ... ok
+test pda_ids_are_eight_byte_little_endian_and_namespaces_are_isolated ... ok
+test read_rejects_unknown_schema_inconsistent_counters_and_truncation ... ok
+test read_rejects_valid_but_noncanonical_pda_pair ... ok
+test read_rejects_wrong_owner_discriminator_address_and_bump ... ok
+test read_rejects_foreign_audit_and_unissued_finding_id ... ok
+test read_finding_rejects_wrong_owner_pda_bump_and_version ... ok
+test text_rules_reject_empty_and_oversize_utf8_without_truncation ... ok
+
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+   Doc-tests khiputrace
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

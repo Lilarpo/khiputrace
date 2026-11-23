@@ -1,0 +1,13 @@
+{
+  "checkedAtUtc": "2026-11-23T02:20:56.145116+00:00",
+  "scope": "4.1: financiación confirmada, solo lectura; no desplegado, pendiente de autorización",
+  "balanceLamports": 10000000000,
+  "sha256": {
+    "docs/DEPLOYMENT.md": "63704735425375bf5c38f5408837dbffb3000dea33daacf0773ccf0a564a76c0",
+    "docs/PROGRESS.md": "fad90e379ef601846674afa02d4cc54c0c69ed28f9172d145bfc4733e6c7da7c",
+    "docs/TEST_EVIDENCE.md": "bfdd5c701aac459ab7aa94fde17f6ee7e73d9db6df286991f47ac79f093b3acc",
+    "docs/ROADMAP.md": "1be815beacd9275116a4ba53092bdbf9a7f89752d3c92fa5e62690cdec81e111",
+    "README.md": "cf142b754b1e679fa531a40363a0da2bc0300dbe7633924f8a57f1bf362ce6a9",
+    "docs/evidence/4.1-funded-wallet-check.json": "4923f282d86059d7ecf693203bf39215653e6d540d9eb65e3e42a0af99d5bb07"
+  }
+}

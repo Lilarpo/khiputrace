@@ -1,0 +1,21 @@
+{
+  "network": "devnet",
+  "directory": "/home/dani/.local/share/khiputrace/devnet",
+  "keys": {
+    "deployer": {
+      "path": "/home/dani/.local/share/khiputrace/devnet/deployer-keypair.json",
+      "publicKey": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+      "permissions": "0o600"
+    },
+    "program": {
+      "path": "/home/dani/.local/share/khiputrace/devnet/program-keypair.json",
+      "publicKey": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+      "permissions": "0o600"
+    },
+    "buffer": {
+      "path": "/home/dani/.local/share/khiputrace/devnet/buffer-keypair.json",
+      "publicKey": "7gFUNQwYe6ofQwQeCJfwJ9gB8aRbC6BJawE3Y4DTq1mx",
+      "permissions": "0o600"
+    }
+  }
+}

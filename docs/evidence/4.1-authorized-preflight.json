@@ -1,0 +1,29 @@
+{
+  "checkedAtUtc": "2026-11-23T02:21:35.870Z",
+  "endpoint": "https://api.devnet.solana.com",
+  "readOnly": true,
+  "sourceProgramId": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+  "identityStillProvisional": false,
+  "artifactBytes": 273368,
+  "artifactSha256": "c941ab95d5cbfc6ae9ec73683dec79e24b0a60f11c505e7a173555b44eb08f17",
+  "deployerAddress": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+  "checks": {
+    "clientIdentityMatches": true,
+    "genesis": "EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG",
+    "version": {
+      "feature-set": 1591744305,
+      "solana-core": "4.5.0-beta.0"
+    },
+    "slot": 525279295,
+    "programAccount": null,
+    "rentLamports": {
+      "program": 833120,
+      "programData": 1389588280,
+      "buffer": 1389547640,
+      "peakBeforeBufferRefund": 2779969040
+    },
+    "transactionFeesIncluded": false,
+    "balanceLamports": 10000000000
+  },
+  "errors": []
+}

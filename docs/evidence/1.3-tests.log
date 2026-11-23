@@ -1,0 +1,22 @@
+test_complete_lifecycle_reads_counters_refund_and_monotonic_ids (test_program.ProgramTests.test_complete_lifecycle_reads_counters_refund_and_monotonic_ids) ... ok
+test_counter_overflow_and_underflow_return_program_errors (test_program.ProgramTests.test_counter_overflow_and_underflow_return_program_errors) ... ok
+test_foreign_audit_combination_rejected_by_program (test_program.ProgramTests.test_foreign_audit_combination_rejected_by_program) ... ok
+test_incorrect_creation_pdas_rejected (test_program.ProgramTests.test_incorrect_creation_pdas_rejected) ... ok
+test_invalid_or_oversized_fields_rejected_after_init_and_update (test_program.ProgramTests.test_invalid_or_oversized_fields_rejected_after_init_and_update) ... ok
+test_invalid_remediation_keeps_finding_open_and_counters_intact (test_program.ProgramTests.test_invalid_remediation_keeps_finding_open_and_counters_intact) ... ok
+test_invalid_severity_rejected_during_instruction_deserialization (test_program.ProgramTests.test_invalid_severity_rejected_during_instruction_deserialization) ... ok
+test_later_failure_rolls_back_physical_close_and_refund (test_program.ProgramTests.test_later_failure_rolls_back_physical_close_and_refund) ... ok
+test_later_instruction_failure_rolls_back_resolution (test_program.ProgramTests.test_later_instruction_failure_rolls_back_resolution) ... ok
+test_missing_authority_signature_rejected_by_all_contexts (test_program.ProgramTests.test_missing_authority_signature_rejected_by_all_contexts) ... ok
+test_open_finding_cannot_close_and_closed_id_cannot_reinitialize (test_program.ProgramTests.test_open_finding_cannot_close_and_closed_id_cannot_reinitialize) ... ok
+test_refund_overflow_is_rejected_before_close (test_program.ProgramTests.test_refund_overflow_is_rejected_before_close) ... ok
+test_resolved_finding_cannot_be_updated_or_resolved_twice (test_program.ProgramTests.test_resolved_finding_cannot_be_updated_or_resolved_twice) ... ok
+test_stored_bump_and_schema_version_are_validated (test_program.ProgramTests.test_stored_bump_and_schema_version_are_validated) ... ok
+test_unauthorized_wallet_rejected_for_all_finding_mutations (test_program.ProgramTests.test_unauthorized_wallet_rejected_for_all_finding_mutations) ... ok
+test_valid_unicode_note_boundaries (test_program.ProgramTests.test_valid_unicode_note_boundaries) ... ok
+test_wrong_account_owner_is_rejected (test_program.ProgramTests.test_wrong_account_owner_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 3.200s
+
+OK

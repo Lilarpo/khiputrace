@@ -1,0 +1,14 @@
+{
+  "extends": "../../frontend/tsconfig.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "verbatimModuleSyntax": false,
+    "noEmit": false,
+    "outDir": "../../.cache/devnet-smoke",
+    "rootDir": "../..",
+    "types": ["node"],
+    "esModuleInterop": true
+  },
+  "include": ["./run.ts"]
+}

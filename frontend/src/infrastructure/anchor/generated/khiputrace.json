@@ -1,0 +1,674 @@
+{
+  "address": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+  "metadata": {
+    "name": "khiputrace",
+    "version": "0.1.0",
+    "spec": "0.1.0"
+  },
+  "instructions": [
+    {
+      "name": "close_finding",
+      "discriminator": [
+        75,
+        252,
+        175,
+        206,
+        114,
+        1,
+        81,
+        134
+      ],
+      "accounts": [
+        {
+          "name": "authority",
+          "writable": true,
+          "signer": true,
+          "relations": [
+            "audit"
+          ]
+        },
+        {
+          "name": "audit",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  97,
+                  117,
+                  100,
+                  105,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "audit.authority",
+                "account": "Audit"
+              },
+              {
+                "kind": "account",
+                "path": "audit.audit_id",
+                "account": "Audit"
+              }
+            ]
+          },
+          "relations": [
+            "finding"
+          ]
+        },
+        {
+          "name": "finding",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  102,
+                  105,
+                  110,
+                  100,
+                  105,
+                  110,
+                  103
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "audit"
+              },
+              {
+                "kind": "account",
+                "path": "finding.finding_id",
+                "account": "Finding"
+              }
+            ]
+          }
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "create_audit",
+      "discriminator": [
+        241,
+        38,
+        131,
+        159,
+        29,
+        231,
+        247,
+        165
+      ],
+      "accounts": [
+        {
+          "name": "authority",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "audit",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  97,
+                  117,
+                  100,
+                  105,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "authority"
+              },
+              {
+                "kind": "arg",
+                "path": "audit_id"
+              }
+            ]
+          }
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "audit_id",
+          "type": "u64"
+        },
+        {
+          "name": "title",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "create_finding",
+      "discriminator": [
+        20,
+        142,
+        156,
+        1,
+        159,
+        170,
+        211,
+        238
+      ],
+      "accounts": [
+        {
+          "name": "authority",
+          "writable": true,
+          "signer": true,
+          "relations": [
+            "audit"
+          ]
+        },
+        {
+          "name": "audit",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  97,
+                  117,
+                  100,
+                  105,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "audit.authority",
+                "account": "Audit"
+              },
+              {
+                "kind": "account",
+                "path": "audit.audit_id",
+                "account": "Audit"
+              }
+            ]
+          }
+        },
+        {
+          "name": "finding",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  102,
+                  105,
+                  110,
+                  100,
+                  105,
+                  110,
+                  103
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "audit"
+              },
+              {
+                "kind": "arg",
+                "path": "finding_id"
+              }
+            ]
+          }
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "finding_id",
+          "type": "u64"
+        },
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "name": "severity",
+          "type": {
+            "defined": {
+              "name": "Severity"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "resolve_finding",
+      "discriminator": [
+        64,
+        166,
+        116,
+        122,
+        187,
+        188,
+        184,
+        157
+      ],
+      "accounts": [
+        {
+          "name": "authority",
+          "signer": true,
+          "relations": [
+            "audit"
+          ]
+        },
+        {
+          "name": "audit",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  97,
+                  117,
+                  100,
+                  105,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "audit.authority",
+                "account": "Audit"
+              },
+              {
+                "kind": "account",
+                "path": "audit.audit_id",
+                "account": "Audit"
+              }
+            ]
+          },
+          "relations": [
+            "finding"
+          ]
+        },
+        {
+          "name": "finding",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  102,
+                  105,
+                  110,
+                  100,
+                  105,
+                  110,
+                  103
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "audit"
+              },
+              {
+                "kind": "account",
+                "path": "finding.finding_id",
+                "account": "Finding"
+              }
+            ]
+          }
+        }
+      ],
+      "args": [
+        {
+          "name": "remediation_note",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "update_finding",
+      "discriminator": [
+        180,
+        60,
+        125,
+        158,
+        30,
+        165,
+        235,
+        228
+      ],
+      "accounts": [
+        {
+          "name": "authority",
+          "signer": true,
+          "relations": [
+            "audit"
+          ]
+        },
+        {
+          "name": "audit",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  97,
+                  117,
+                  100,
+                  105,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "audit.authority",
+                "account": "Audit"
+              },
+              {
+                "kind": "account",
+                "path": "audit.audit_id",
+                "account": "Audit"
+              }
+            ]
+          },
+          "relations": [
+            "finding"
+          ]
+        },
+        {
+          "name": "finding",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  102,
+                  105,
+                  110,
+                  100,
+                  105,
+                  110,
+                  103
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "audit"
+              },
+              {
+                "kind": "account",
+                "path": "finding.finding_id",
+                "account": "Finding"
+              }
+            ]
+          }
+        }
+      ],
+      "args": [
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "name": "severity",
+          "type": {
+            "defined": {
+              "name": "Severity"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "Audit",
+      "discriminator": [
+        242,
+        65,
+        202,
+        147,
+        141,
+        103,
+        253,
+        134
+      ]
+    },
+    {
+      "name": "Finding",
+      "discriminator": [
+        207,
+        23,
+        56,
+        14,
+        197,
+        170,
+        203,
+        34
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "Unauthorized",
+      "msg": "La wallet no es la autoridad de la auditoría."
+    },
+    {
+      "code": 6001,
+      "name": "AuditMismatch",
+      "msg": "El hallazgo no pertenece a la auditoría indicada."
+    },
+    {
+      "code": 6002,
+      "name": "InvalidText",
+      "msg": "El texto está vacío o excede su límite de bytes UTF-8."
+    },
+    {
+      "code": 6003,
+      "name": "InvalidTransition",
+      "msg": "La transición de estado no está permitida."
+    },
+    {
+      "code": 6004,
+      "name": "CorrectiveActionRequired",
+      "msg": "Se requiere una acción correctiva válida."
+    },
+    {
+      "code": 6005,
+      "name": "FindingNotResolved",
+      "msg": "El hallazgo debe estar resuelto."
+    },
+    {
+      "code": 6006,
+      "name": "CounterOverflow",
+      "msg": "El contador no puede incrementarse."
+    },
+    {
+      "code": 6007,
+      "name": "CounterUnderflow",
+      "msg": "El contador no puede decrementarse."
+    },
+    {
+      "code": 6008,
+      "name": "UnexpectedFindingId",
+      "msg": "El ID no coincide con el siguiente hallazgo de la auditoría."
+    },
+    {
+      "code": 6009,
+      "name": "InvalidCounters",
+      "msg": "Los contadores de la auditoría son inconsistentes."
+    },
+    {
+      "code": 6010,
+      "name": "InvalidPda",
+      "msg": "La cuenta no corresponde a su PDA canónica."
+    },
+    {
+      "code": 6011,
+      "name": "InvalidBump",
+      "msg": "El bump almacenado no es canónico."
+    },
+    {
+      "code": 6012,
+      "name": "UnsupportedVersion",
+      "msg": "La versión del esquema no es compatible."
+    },
+    {
+      "code": 6013,
+      "name": "InvalidOwner",
+      "msg": "La cuenta no pertenece al programa KhipuTrace."
+    }
+  ],
+  "types": [
+    {
+      "name": "Audit",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "version",
+            "type": "u8"
+          },
+          {
+            "name": "authority",
+            "type": "pubkey"
+          },
+          {
+            "name": "audit_id",
+            "type": "u64"
+          },
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "next_finding_id",
+            "type": "u64"
+          },
+          {
+            "name": "active_findings",
+            "type": "u64"
+          },
+          {
+            "name": "open_findings",
+            "type": "u64"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Finding",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "version",
+            "type": "u8"
+          },
+          {
+            "name": "audit",
+            "type": "pubkey"
+          },
+          {
+            "name": "finding_id",
+            "type": "u64"
+          },
+          {
+            "name": "severity",
+            "type": {
+              "defined": {
+                "name": "Severity"
+              }
+            }
+          },
+          {
+            "name": "status",
+            "type": {
+              "defined": {
+                "name": "FindingStatus"
+              }
+            }
+          },
+          {
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "name": "remediation_note",
+            "type": "string"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FindingStatus",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "Open"
+          },
+          {
+            "name": "Resolved"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Severity",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "Low"
+          },
+          {
+            "name": "Medium"
+          },
+          {
+            "name": "High"
+          },
+          {
+            "name": "Critical"
+          }
+        ]
+      }
+    }
+  ]
+}

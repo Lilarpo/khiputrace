@@ -1,0 +1,5 @@
+700 /home/dani/.local/share/khiputrace/devnet
+600 /home/dani/.local/share/khiputrace/devnet/4.2-unauthorized-keypair.json
+600 /home/dani/.local/share/khiputrace/devnet/buffer-keypair.json
+600 /home/dani/.local/share/khiputrace/devnet/deployer-keypair.json
+600 /home/dani/.local/share/khiputrace/devnet/program-keypair.json

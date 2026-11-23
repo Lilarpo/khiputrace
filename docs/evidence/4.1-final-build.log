@@ -1,0 +1,5 @@
+[2026-11-23T02:04:46.057302960Z WARN  cargo_build_sbf] Package 'khiputrace' has two crate types defined: cdylib and lib. This setting precludes link-time optimizations (LTO). Use cdylib for programs to be deployed and rlib for packages to be imported by other programs as libraries.
+   Compiling khiputrace v0.1.0 (/home/dani/Documentos/PROYECTOS/KHIPUTRACE/programs/khiputrace)
+    Finished `release` profile [optimized] target(s) in 39.71s
+[2026-11-23T02:05:26.282273995Z WARN  cargo_build_sbf::post_processing] The following functions are undefined and not known syscalls ["abort", "sol_log_", "sol_memcpy_", "sol_invoke_signed_rust", "sol_get_rent_sysvar", "sol_memset_", "sol_try_find_program_address", "sol_log_pubkey", "sol_sha256"].
+[2026-11-23T02:05:26.282315806Z WARN  cargo_build_sbf::post_processing]          Calling them will trigger a run-time error.

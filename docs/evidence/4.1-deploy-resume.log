@@ -1,0 +1,18 @@
+[2026-11-23T02:27:18.527161777Z ERROR quinn_udp::imp] got transmit error, halting segmentation offload
+[2026-11-23T02:27:18.527319436Z WARN  quinn_udp] sendmsg error: Os { code: 5, kind: Uncategorized, message: "Input/output error" }, Transmit: { destination: 64.130.33.238:8003, src_ip: None, ecn: None, len: 9282, segment_size: Some(1326) }
+[2026-11-23T02:27:18.918180464Z ERROR quinn_udp::imp] got transmit error, halting segmentation offload
+[2026-11-23T02:27:18.918330277Z WARN  quinn_udp] sendmsg error: Os { code: 5, kind: Uncategorized, message: "Input/output error" }, Transmit: { destination: 198.13.130.39:8003, src_ip: None, ecn: None, len: 9600, segment_size: Some(1200) }
+[2026-11-23T02:27:20.178892929Z ERROR quinn_udp::imp] got transmit error, halting segmentation offload
+[2026-11-23T02:27:20.178991778Z WARN  quinn_udp] sendmsg error: Os { code: 5, kind: Uncategorized, message: "Input/output error" }, Transmit: { destination: 109.94.99.153:8003, src_ip: None, ecn: None, len: 6630, segment_size: Some(1326) }
+[2026-11-23T02:27:21.736632254Z ERROR quinn_udp::imp] got transmit error, halting segmentation offload
+[2026-11-23T02:27:21.736738703Z WARN  quinn_udp] sendmsg error: Os { code: 5, kind: Uncategorized, message: "Input/output error" }, Transmit: { destination: 67.209.54.163:8003, src_ip: None, ecn: None, len: 9600, segment_size: Some(1200) }
+[2026-11-23T02:27:23.339091870Z ERROR quinn_udp::imp] got transmit error, halting segmentation offload
+[2026-11-23T02:27:23.339226070Z WARN  quinn_udp] sendmsg error: Os { code: 5, kind: Uncategorized, message: "Input/output error" }, Transmit: { destination: 64.130.35.116:9007, src_ip: None, ecn: None, len: 8400, segment_size: Some(1200) }
+[2026-11-23T02:27:24.325517257Z ERROR quinn_udp::imp] got transmit error, halting segmentation offload
+[2026-11-23T02:27:24.325651501Z WARN  quinn_udp] sendmsg error: Os { code: 5, kind: Uncategorized, message: "Input/output error" }, Transmit: { destination: 64.130.41.138:8003, src_ip: None, ecn: None, len: 9282, segment_size: Some(1326) }
+[2026-11-23T02:27:25.058829438Z ERROR quinn_udp::imp] got transmit error, halting segmentation offload
+[2026-11-23T02:27:25.058923452Z WARN  quinn_udp] sendmsg error: Os { code: 5, kind: Uncategorized, message: "Input/output error" }, Transmit: { destination: 38.246.35.41:8003, src_ip: None, ecn: None, len: 9282, segment_size: Some(1326) }
+Program Id: GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv
+
+Signature: 3UKwewKZn5yhuBvtiqLxVDMHRe3CM1Ws58bJuwh6H73fNQhEya2vuu9vqCrgUJxuLxaJ5F1HVGiLQuHPeY9kd2Fi
+

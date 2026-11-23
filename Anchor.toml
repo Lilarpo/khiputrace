@@ -1,0 +1,18 @@
+[toolchain]
+anchor_version = "0.32.2"
+solana_version = "2.3.0"
+package_manager = "npm"
+
+[provider]
+cluster = "Localnet"
+wallet = "~/.local/share/khiputrace/devnet/deployer-keypair.json"
+
+[workspace]
+members = ["programs/khiputrace"]
+
+# Identidad real generada fuera del repositorio; despliegue pendiente de autorización.
+[programs.localnet]
+khiputrace = "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv"
+
+[programs.devnet]
+khiputrace = "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv"

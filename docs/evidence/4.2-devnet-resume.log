@@ -1,0 +1,29 @@
+RECONCILIADA update-open-finding, sin reenvío
+APROBADA unauthorized-create
+APROBADA unauthorized-update
+APROBADA unauthorized-resolve
+APROBADA unauthorized-close
+APROBADA wrong-audit-update
+Server responded with 429 Too Many Requests.  Retrying after 500ms delay...
+APROBADA wrong-audit-resolve
+APROBADA wrong-audit-close
+APROBADA close-open-finding
+APROBADA resolve-empty-action
+APROBADA resolve-short-action
+APROBADA resolve-whitespace-action
+APROBADA resolve-oversized-action
+APROBADA update-oversized-title
+APROBADA create-invalid-title
+APROBADA atomic-rollback
+APROBADA resolve-valid-action
+APROBADA update-resolved-finding
+APROBADA resolve-resolved-finding
+APROBADA close-resolved-finding
+APROBADA reuse-closed-id
+APROBADA create-next-finding
+APROBADA read-final-state
+{
+  "passed": 28,
+  "failed": 0,
+  "programRejections": 18
+}

@@ -1,0 +1,16 @@
+{
+  "extends": "../../frontend/tsconfig.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "verbatimModuleSyntax": false,
+    "noEmit": false,
+    "outDir": "../../.cache/application-tests",
+    "rootDir": "../..",
+    "types": ["node"]
+  },
+  "include": [
+    "./*.ts", "../../frontend/src/application/**/*.ts", "../../frontend/src/domain/**/*.ts",
+    "../../frontend/src/composition/contracts.ts", "../../frontend/src/composition/create-services.ts"
+  ]
+}

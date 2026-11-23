@@ -1,0 +1,44 @@
+Comando: npm ci --ignore-scripts --no-fund
+
+added 92 packages, and audited 94 packages in 9s
+
+found 0 vulnerabilities
+Código: 0
+Comando: npm run typecheck
+
+> khiputrace@0.1.0 typecheck
+> npm run typecheck --workspace frontend
+
+
+> @khiputrace/frontend@0.1.0 typecheck
+> tsc --noEmit
+
+Código: 0
+Comando: npm run build
+
+> khiputrace@0.1.0 build
+> npm run build --workspace frontend
+
+
+> @khiputrace/frontend@0.1.0 build
+> vite build
+
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 113 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                              0.91 kB │ gzip:  0.46 kB
+dist/assets/index-CeayrxsR.css              21.83 kB │ gzip:  5.69 kB
+dist/assets/config-Cv2ftHGX.js               0.05 kB │ gzip:  0.06 kB
+dist/assets/index.browser.esm-ByQr01pV.js    0.11 kB │ gzip:  0.11 kB
+dist/assets/errors-CEX1pzaQ.js               0.19 kB │ gzip:  0.15 kB
+dist/assets/constraints-mILCPDte.js          0.25 kB │ gzip:  0.15 kB
+dist/assets/config-Dw0u_cue.js               6.17 kB │ gzip:  1.81 kB
+dist/assets/buffer-8Q1EtQxw.js              27.73 kB │ gzip:  8.55 kB
+dist/assets/client-3avaSU9S.js             165.91 kB │ gzip: 48.00 kB
+dist/assets/index.browser.esm-DmIQ3dew.js  278.62 kB │ gzip: 79.53 kB
+dist/assets/index-DGGHEvea.js              279.27 kB │ gzip: 85.11 kB
+
+✓ built in 1.43s
+Código: 0

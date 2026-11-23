@@ -1,0 +1,33 @@
+{
+  "checkedAtUtc": "2026-11-23T03:16:42.646999+00:00",
+  "scope": "Archivos locales de texto, incluidos dist y .env; sin cach\u00e9s, dependencias, target ni historial Git. Patrones limitados, no detecci\u00f3n exhaustiva.",
+  "secretCandidates": [],
+  "textFilesScanned": 306,
+  "historicalEvidenceChecked": 88,
+  "historicalEvidenceChanges": [],
+  "hasGitHistory": false,
+  "envVariableNames": {
+    "frontend/.env.local": [
+      "VITE_KHIPUTRACE_CLUSTER",
+      "VITE_KHIPUTRACE_PROGRAM_ID",
+      "VITE_KHIPUTRACE_RPC_URL"
+    ],
+    "frontend/.env.example": [
+      "VITE_KHIPUTRACE_PROGRAM_ID",
+      "VITE_KHIPUTRACE_CLUSTER",
+      "VITE_KHIPUTRACE_RPC_URL"
+    ]
+  },
+  "programId": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+  "localElfSha256": "c941ab95d5cbfc6ae9ec73683dec79e24b0a60f11c505e7a173555b44eb08f17",
+  "sameElfAs42": true,
+  "devnetReadOnly": {
+    "status": "passed",
+    "genesis": "EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG",
+    "slot": 525293039,
+    "programData": "26Ro9jtk13JNZtmigtZXSKH7BXPDY9i6LThWKgZeRiuz",
+    "sameElf": true,
+    "expectedUpgradeAuthority": true,
+    "writes": 0
+  }
+}

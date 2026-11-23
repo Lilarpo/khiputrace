@@ -1,0 +1,28 @@
+
+> khiputrace@0.1.0 test:findings
+> tsc -p tests/browser/tsconfig.json --noEmit && playwright test --config playwright.finding.config.ts
+
+[WebServer] (node:28317) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:28356) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:28392) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 9 tests using 1 worker
+
+(node:28416) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:28295) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/browser/findings.spec.ts:72:1 › SBF producción: ciclo completo, acción correctiva, cierre y siguiente ID no reutilizado (17.6s)
+  ✓  2 tests/browser/findings.spec.ts:119:1 › SBF: secuencia obsoleta rechazada y error del programa visible con estado intacto (7.5s)
+  ✓  3 tests/browser/findings.spec.ts:137:1 › SBF: modificación obsoleta tras resolver y cierre de abierto rechazados por Rust (9.5s)
+  ✓  4 tests/browser/findings.spec.ts:158:1 › componentes: formularios, UTF-8, resolución y confirmación accesible de cierre (4.0s)
+  ✓  5 tests/browser/findings.spec.ts:188:3 › componentes: transacción pending, navegación y recibo (3.5s)
+  ✓  6 tests/browser/findings.spec.ts:188:3 › componentes: transacción unknown, navegación y recibo (2.9s)
+  ✓  7 tests/browser/findings.spec.ts:188:3 › componentes: transacción refresh-error, navegación y recibo (3.0s)
+  ✓  8 tests/browser/findings.spec.ts:210:1 › componentes: fallo de consulta se diferencia de lista vacía y admite reintento (2.3s)
+  ✓  9 tests/browser/findings.spec.ts:218:1 › componentes: consulta tardía tras desconectar no muestra hallazgos de la cuenta anterior (2.3s)
+
+  9 passed (1.1m)

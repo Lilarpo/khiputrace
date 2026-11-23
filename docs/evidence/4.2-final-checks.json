@@ -1,0 +1,17 @@
+{
+  "checkedAtUtc": "2026-11-23T03:03:06.953735+00:00",
+  "cliCasesPassed": 28,
+  "directProgramRejections": 18,
+  "uiStagesPassed": 8,
+  "uiProgramRejections": 1,
+  "successfulFinalizedTransactions": 16,
+  "confirmedSignatureReconciledWithoutResend": true,
+  "negativeCasesBusinessStateIdentical": true,
+  "testedRustSourceMatchesDeployedElfSource": true,
+  "onChainCodeMatchesTestedElf": true,
+  "protectedProductFilesUnchanged": 56,
+  "historicalEvidenceFilesUnchanged": 65,
+  "keysOnlyOutsideProject": true,
+  "manualExtensionReview": "pending",
+  "finalWayLearnSubmission": "pending"
+}

@@ -1,0 +1,11 @@
+{
+  "solana": {
+    "sha256": "129f643abf4898fa443110db6d3f655b61bf67aab6cbba195bc8a3e4aad74e3f"
+  },
+  "solana-keygen": {
+    "sha256": "c8a144f8df3de5dc6e64f1cbcc3da7841776de6ba4636cc403cb087938f8eeaa"
+  },
+  "syscallsTextBytes": 0,
+  "globalConfigChanged": false,
+  "anchorCliAvailable": false
+}

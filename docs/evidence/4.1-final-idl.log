@@ -1,0 +1,12 @@
+
+> khiputrace@0.1.0 generate:idl
+> node scripts/generate-idl.mjs
+
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.25s
+   Compiling khiputrace v0.1.0 (/home/dani/Documentos/PROYECTOS/KHIPUTRACE/programs/khiputrace)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 13.50s
+     Running unittests src/lib.rs (/home/dani/Documentos/PROYECTOS/KHIPUTRACE/target/debug/deps/khiputrace-289ce26587b104d6)
+     Running tests/instructions.rs (/home/dani/Documentos/PROYECTOS/KHIPUTRACE/target/debug/deps/instructions-1e1a16cec3144af7)
+     Running tests/layout.rs (/home/dani/Documentos/PROYECTOS/KHIPUTRACE/target/debug/deps/layout-1d058a420c03f456)
+     Running tests/models.rs (/home/dani/Documentos/PROYECTOS/KHIPUTRACE/target/debug/deps/models-34cea4cea8aeafab)
+IDL y tipos comprobados desde el programa Rust; sin despliegue.

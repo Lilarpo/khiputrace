@@ -1,0 +1,1 @@
+scripts/devnet-acceptance/run.ts(96,10): error TS18047: 'data' is possibly 'null'.

@@ -1,0 +1,31 @@
+{
+  "verifiedAtUtc": "2026-11-23T02:28:45.961Z",
+  "network": "devnet",
+  "programId": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+  "executable": true,
+  "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "programDataAddress": "26Ro9jtk13JNZtmigtZXSKH7BXPDY9i6LThWKgZeRiuz",
+  "upgradeAuthority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+  "deploymentSlot": "525280825",
+  "programBytes": 273368,
+  "localSha256": "c941ab95d5cbfc6ae9ec73683dec79e24b0a60f11c505e7a173555b44eb08f17",
+  "onChainCodeSha256": "c941ab95d5cbfc6ae9ec73683dec79e24b0a60f11c505e7a173555b44eb08f17",
+  "downloadedSha256": "c941ab95d5cbfc6ae9ec73683dec79e24b0a60f11c505e7a173555b44eb08f17",
+  "bufferAfter": null,
+  "deploySignature": "3UKwewKZn5yhuBvtiqLxVDMHRe3CM1Ws58bJuwh6H73fNQhEya2vuu9vqCrgUJxuLxaJ5F1HVGiLQuHPeY9kd2Fi",
+  "deployTransactionSlot": 525280825,
+  "deployTransactionError": null,
+  "deployTransactionFeeLamports": 10000,
+  "deployLogs": [
+    "Program 11111111111111111111111111111111 invoke [1]",
+    "Program 11111111111111111111111111111111 success",
+    "Program BPFLoaderUpgradeab1e11111111111111111111111 invoke [1]",
+    "Program 11111111111111111111111111111111 invoke [2]",
+    "Program 11111111111111111111111111111111 success",
+    "Deployed program GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+    "Program BPFLoaderUpgradeab1e11111111111111111111111 success"
+  ],
+  "balanceAfterDeploymentLamports": 8608193600,
+  "totalSpentSincePreflightLamports": 1391806400,
+  "explorer": "https://explorer.solana.com/tx/3UKwewKZn5yhuBvtiqLxVDMHRe3CM1Ws58bJuwh6H73fNQhEya2vuu9vqCrgUJxuLxaJ5F1HVGiLQuHPeY9kd2Fi?cluster=devnet"
+}

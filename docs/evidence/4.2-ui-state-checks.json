@@ -1,0 +1,363 @@
+{
+  "checkedAtUtc": "2026-11-23T02:55:18.141Z",
+  "source": "Decodificación de snapshots RPC Devnet mediante AccountReader/mappers productivos; sin nuevas transacciones ni RPC en esta comprobación.",
+  "cases": [
+    {
+      "id": "ui-create-audit",
+      "initial": {
+        "audits": {},
+        "findings": {}
+      },
+      "final": {
+        "audits": {
+          "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr": {
+            "address": "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220424",
+            "title": "Auditoría UI real Devnet 4.2",
+            "nextFindingId": "0",
+            "findingCount": "0",
+            "openFindingCount": "0"
+          }
+        },
+        "findings": {}
+      },
+      "canonicalPdasOwnershipAndBumpsValidated": true
+    },
+    {
+      "id": "ui-create-finding",
+      "initial": {
+        "audits": {
+          "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr": {
+            "address": "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220424",
+            "title": "Auditoría UI real Devnet 4.2",
+            "nextFindingId": "0",
+            "findingCount": "0",
+            "openFindingCount": "0"
+          }
+        },
+        "findings": {}
+      },
+      "final": {
+        "audits": {
+          "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr": {
+            "address": "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220424",
+            "title": "Auditoría UI real Devnet 4.2",
+            "nextFindingId": "1",
+            "findingCount": "1",
+            "openFindingCount": "1"
+          }
+        },
+        "findings": {
+          "DVoJxRtMB1v54BtKnZNWMh5kceipZWyJPH77QrFTVqby": {
+            "address": "DVoJxRtMB1v54BtKnZNWMh5kceipZWyJPH77QrFTVqby",
+            "audit": "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr",
+            "id": "0",
+            "title": "Riesgo UI Devnet",
+            "description": "Descripción sintética del recorrido Devnet UI",
+            "severity": "high",
+            "status": "open",
+            "correctiveAction": null
+          }
+        }
+      },
+      "canonicalPdasOwnershipAndBumpsValidated": true
+    },
+    {
+      "id": "ui-update-open",
+      "initial": {
+        "audits": {
+          "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr": {
+            "address": "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220424",
+            "title": "Auditoría UI real Devnet 4.2",
+            "nextFindingId": "1",
+            "findingCount": "1",
+            "openFindingCount": "1"
+          }
+        },
+        "findings": {
+          "DVoJxRtMB1v54BtKnZNWMh5kceipZWyJPH77QrFTVqby": {
+            "address": "DVoJxRtMB1v54BtKnZNWMh5kceipZWyJPH77QrFTVqby",
+            "audit": "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr",
+            "id": "0",
+            "title": "Riesgo UI Devnet",
+            "description": "Descripción sintética del recorrido Devnet UI",
+            "severity": "high",
+            "status": "open",
+            "correctiveAction": null
+          }
+        }
+      },
+      "final": {
+        "audits": {
+          "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr": {
+            "address": "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220424",
+            "title": "Auditoría UI real Devnet 4.2",
+            "nextFindingId": "1",
+            "findingCount": "1",
+            "openFindingCount": "1"
+          }
+        },
+        "findings": {
+          "DVoJxRtMB1v54BtKnZNWMh5kceipZWyJPH77QrFTVqby": {
+            "address": "DVoJxRtMB1v54BtKnZNWMh5kceipZWyJPH77QrFTVqby",
+            "audit": "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr",
+            "id": "0",
+            "title": "Riesgo UI actualizado",
+            "description": "Descripción sintética del recorrido Devnet UI",
+            "severity": "critical",
+            "status": "open",
+            "correctiveAction": null
+          }
+        }
+      },
+      "canonicalPdasOwnershipAndBumpsValidated": true
+    },
+    {
+      "id": "ui-resolve",
+      "initial": {
+        "audits": {
+          "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr": {
+            "address": "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220424",
+            "title": "Auditoría UI real Devnet 4.2",
+            "nextFindingId": "1",
+            "findingCount": "1",
+            "openFindingCount": "1"
+          }
+        },
+        "findings": {
+          "DVoJxRtMB1v54BtKnZNWMh5kceipZWyJPH77QrFTVqby": {
+            "address": "DVoJxRtMB1v54BtKnZNWMh5kceipZWyJPH77QrFTVqby",
+            "audit": "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr",
+            "id": "0",
+            "title": "Riesgo UI actualizado",
+            "description": "Descripción sintética del recorrido Devnet UI",
+            "severity": "critical",
+            "status": "open",
+            "correctiveAction": null
+          }
+        }
+      },
+      "final": {
+        "audits": {
+          "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr": {
+            "address": "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220424",
+            "title": "Auditoría UI real Devnet 4.2",
+            "nextFindingId": "1",
+            "findingCount": "1",
+            "openFindingCount": "0"
+          }
+        },
+        "findings": {
+          "DVoJxRtMB1v54BtKnZNWMh5kceipZWyJPH77QrFTVqby": {
+            "address": "DVoJxRtMB1v54BtKnZNWMh5kceipZWyJPH77QrFTVqby",
+            "audit": "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr",
+            "id": "0",
+            "title": "Riesgo UI actualizado",
+            "description": "Descripción sintética del recorrido Devnet UI",
+            "severity": "critical",
+            "status": "resolved",
+            "correctiveAction": "Corrección UI Devnet aplicada y verificada"
+          }
+        }
+      },
+      "canonicalPdasOwnershipAndBumpsValidated": true
+    },
+    {
+      "id": "ui-close-resolved",
+      "initial": {
+        "audits": {
+          "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr": {
+            "address": "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220424",
+            "title": "Auditoría UI real Devnet 4.2",
+            "nextFindingId": "1",
+            "findingCount": "1",
+            "openFindingCount": "0"
+          }
+        },
+        "findings": {
+          "DVoJxRtMB1v54BtKnZNWMh5kceipZWyJPH77QrFTVqby": {
+            "address": "DVoJxRtMB1v54BtKnZNWMh5kceipZWyJPH77QrFTVqby",
+            "audit": "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr",
+            "id": "0",
+            "title": "Riesgo UI actualizado",
+            "description": "Descripción sintética del recorrido Devnet UI",
+            "severity": "critical",
+            "status": "resolved",
+            "correctiveAction": "Corrección UI Devnet aplicada y verificada"
+          }
+        }
+      },
+      "final": {
+        "audits": {
+          "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr": {
+            "address": "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220424",
+            "title": "Auditoría UI real Devnet 4.2",
+            "nextFindingId": "1",
+            "findingCount": "0",
+            "openFindingCount": "0"
+          }
+        },
+        "findings": {}
+      },
+      "canonicalPdasOwnershipAndBumpsValidated": true
+    },
+    {
+      "id": "ui-monotonic-id",
+      "initial": {
+        "audits": {
+          "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr": {
+            "address": "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220424",
+            "title": "Auditoría UI real Devnet 4.2",
+            "nextFindingId": "1",
+            "findingCount": "0",
+            "openFindingCount": "0"
+          }
+        },
+        "findings": {}
+      },
+      "final": {
+        "audits": {
+          "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr": {
+            "address": "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220424",
+            "title": "Auditoría UI real Devnet 4.2",
+            "nextFindingId": "2",
+            "findingCount": "1",
+            "openFindingCount": "1"
+          }
+        },
+        "findings": {
+          "5AQvnmGARUhvor4PyxLi2Tc4xqWmzsMQDMo4pBcmeJA1": {
+            "address": "5AQvnmGARUhvor4PyxLi2Tc4xqWmzsMQDMo4pBcmeJA1",
+            "audit": "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr",
+            "id": "1",
+            "title": "Segundo riesgo UI",
+            "description": "Descripción sintética del recorrido Devnet UI",
+            "severity": "low",
+            "status": "open",
+            "correctiveAction": null
+          }
+        }
+      },
+      "canonicalPdasOwnershipAndBumpsValidated": true
+    },
+    {
+      "id": "ui-program-error",
+      "initial": {
+        "audits": {
+          "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr": {
+            "address": "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220424",
+            "title": "Auditoría UI real Devnet 4.2",
+            "nextFindingId": "2",
+            "findingCount": "1",
+            "openFindingCount": "0"
+          }
+        },
+        "findings": {
+          "5AQvnmGARUhvor4PyxLi2Tc4xqWmzsMQDMo4pBcmeJA1": {
+            "address": "5AQvnmGARUhvor4PyxLi2Tc4xqWmzsMQDMo4pBcmeJA1",
+            "audit": "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr",
+            "id": "1",
+            "title": "Segundo riesgo UI",
+            "description": "Descripción sintética del recorrido Devnet UI",
+            "severity": "low",
+            "status": "resolved",
+            "correctiveAction": "Resolución concurrente sintética Devnet UI"
+          }
+        }
+      },
+      "final": {
+        "audits": {
+          "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr": {
+            "address": "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220424",
+            "title": "Auditoría UI real Devnet 4.2",
+            "nextFindingId": "2",
+            "findingCount": "1",
+            "openFindingCount": "0"
+          }
+        },
+        "findings": {
+          "5AQvnmGARUhvor4PyxLi2Tc4xqWmzsMQDMo4pBcmeJA1": {
+            "address": "5AQvnmGARUhvor4PyxLi2Tc4xqWmzsMQDMo4pBcmeJA1",
+            "audit": "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr",
+            "id": "1",
+            "title": "Segundo riesgo UI",
+            "description": "Descripción sintética del recorrido Devnet UI",
+            "severity": "low",
+            "status": "resolved",
+            "correctiveAction": "Resolución concurrente sintética Devnet UI"
+          }
+        }
+      },
+      "canonicalPdasOwnershipAndBumpsValidated": true
+    },
+    {
+      "id": "ui-close-second",
+      "initial": {
+        "audits": {
+          "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr": {
+            "address": "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220424",
+            "title": "Auditoría UI real Devnet 4.2",
+            "nextFindingId": "2",
+            "findingCount": "1",
+            "openFindingCount": "0"
+          }
+        },
+        "findings": {
+          "5AQvnmGARUhvor4PyxLi2Tc4xqWmzsMQDMo4pBcmeJA1": {
+            "address": "5AQvnmGARUhvor4PyxLi2Tc4xqWmzsMQDMo4pBcmeJA1",
+            "audit": "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr",
+            "id": "1",
+            "title": "Segundo riesgo UI",
+            "description": "Descripción sintética del recorrido Devnet UI",
+            "severity": "low",
+            "status": "resolved",
+            "correctiveAction": "Resolución concurrente sintética Devnet UI"
+          }
+        }
+      },
+      "final": {
+        "audits": {
+          "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr": {
+            "address": "6JabCgwqAsMU1JpmyvydWSkaSM8SvhJRGWyeJR3Kkmrr",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220424",
+            "title": "Auditoría UI real Devnet 4.2",
+            "nextFindingId": "2",
+            "findingCount": "0",
+            "openFindingCount": "0"
+          }
+        },
+        "findings": {}
+      },
+      "canonicalPdasOwnershipAndBumpsValidated": true
+    }
+  ],
+  "verified": true
+}

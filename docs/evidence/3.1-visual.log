@@ -1,0 +1,28 @@
+
+> khiputrace@0.1.0 test:visual
+> tsc -p tests/browser/tsconfig.json --noEmit && playwright test
+
+[WebServer] (node:53263) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:53301) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:53337) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 11 tests using 1 worker
+
+(node:53360) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/browser/base.spec.ts:49:1 › escritorio: identidad, navegación y datos sin inventar (3.3s)
+  ✓   2 tests/browser/base.spec.ts:66:1 › móvil: layout sin overflow y selector accesible con teclado (1.8s)
+  ✓   3 tests/browser/base.spec.ts:77:1 › conectar, mostrar dirección pública, copiar y desconectar sin persistencia (3.2s)
+  ✓   4 tests/browser/base.spec.ts:91:1 › wallet rechazada: error visible y notificación descartable (2.8s)
+  ✓   5 tests/browser/base.spec.ts:99:1 › cancelar conexión pendiente ignora una aprobación tardía (3.0s)
+  ✓   6 tests/browser/base.spec.ts:108:1 › cambio de cuenta y pérdida de compatibilidad Devnet limpian la sesión (2.3s)
+  ✓   7 tests/browser/base.spec.ts:119:1 › cuenta sin soporte Devnet no deja sesión activa (2.4s)
+  ✓   8 tests/browser/base.spec.ts:125:1 › error de desconexión informa cierre local sin afirmar revocación (2.5s)
+  ✓   9 tests/browser/base.spec.ts:147:1 › Application real: carga, lista vacía confirmada por RPC controlado y ninguna escritura (4.4s)
+  ✓  10 tests/browser/base.spec.ts:159:1 › error RPC, reintento y respuesta tardía tras desconectar (4.9s)
+  ✓  11 tests/browser/base.spec.ts:172:1 › wallet registrada después de cargar aparece sin recargar la página (2.2s)
+
+  11 passed (46.3s)

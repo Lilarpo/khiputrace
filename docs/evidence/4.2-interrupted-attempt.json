@@ -1,0 +1,584 @@
+{
+  "startedAtUtc": "2026-11-23T02:43:54.290Z",
+  "network": "devnet",
+  "programId": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+  "cases": [
+    {
+      "id": "create-audit",
+      "expected": "Crear auditoría con autoridad responsable y contadores 0/0/0.",
+      "status": "passed",
+      "signature": "5jndZYRjQf5pPTWyvGtHfoteXxUTBiUtvAHNyJBPJdKrm1m65Mz8ZHfwgSHU7UNRb7E94VKeYvjMWpqwfJpkCnCf",
+      "explorer": "https://explorer.solana.com/tx/5jndZYRjQf5pPTWyvGtHfoteXxUTBiUtvAHNyJBPJdKrm1m65Mz8ZHfwgSHU7UNRb7E94VKeYvjMWpqwfJpkCnCf?cluster=devnet",
+      "initial": {
+        "slot": 525284888,
+        "accounts": {
+          "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR": null,
+          "8caAjv4e22auwC2M3ymPvMUWa7SUq8LyGfnpDtH9fFEC": null,
+          "5c6MKLdZmeMkLPLrHFuBYfnsEpCzgZerRTJ1uUXyUvbG": null,
+          "8DZ7x4iTNLXxkHoa3Fb8JfmyGwRDggBqHHS71c9RJW4P": null,
+          "8HM7bGE6qwogEF1cjCYhNZFHnyyc5Q7ArukszTp5BRhS": null
+        },
+        "audits": {},
+        "findings": {}
+      },
+      "observed": {
+        "slot": 525284903,
+        "error": null,
+        "feeLamports": 5000,
+        "logs": [
+          "Program GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv invoke [1]",
+          "Program log: Instruction: CreateAudit",
+          "Program 11111111111111111111111111111111 invoke [2]",
+          "Program 11111111111111111111111111111111 success",
+          "Program GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv consumed 9277 of 200000 compute units",
+          "Program GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv success"
+        ]
+      },
+      "final": {
+        "slot": 525284916,
+        "accounts": {
+          "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR": {
+            "owner": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+            "executable": false,
+            "lamports": 1534160,
+            "base64": "8kHKk41n/YYBndQHJB/sZDxWT/LNtle5jdWXlkHOzhyVHQ6vsHVp9mrE35EsLwAAACAAAABBdWRpdG9yw61hIHNpbnTDqXRpY2EgRGV2bmV0IDQuMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+          },
+          "8caAjv4e22auwC2M3ymPvMUWa7SUq8LyGfnpDtH9fFEC": null,
+          "5c6MKLdZmeMkLPLrHFuBYfnsEpCzgZerRTJ1uUXyUvbG": null,
+          "8DZ7x4iTNLXxkHoa3Fb8JfmyGwRDggBqHHS71c9RJW4P": null,
+          "8HM7bGE6qwogEF1cjCYhNZFHnyyc5Q7ArukszTp5BRhS": null
+        },
+        "audits": {
+          "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR": {
+            "address": "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220420",
+            "title": "Auditoría sintética Devnet 4.2",
+            "nextFindingId": "0",
+            "findingCount": "0",
+            "openFindingCount": "0"
+          }
+        },
+        "findings": {}
+      }
+    },
+    {
+      "id": "read-audit",
+      "expected": "Consultar detalle/listado desde casos de uso y obtener la misma cuenta.",
+      "status": "passed",
+      "signature": null,
+      "explorer": null,
+      "initial": {
+        "slot": 525284921,
+        "accounts": {
+          "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR": {
+            "owner": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+            "executable": false,
+            "lamports": 1534160,
+            "base64": "8kHKk41n/YYBndQHJB/sZDxWT/LNtle5jdWXlkHOzhyVHQ6vsHVp9mrE35EsLwAAACAAAABBdWRpdG9yw61hIHNpbnTDqXRpY2EgRGV2bmV0IDQuMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+          },
+          "8caAjv4e22auwC2M3ymPvMUWa7SUq8LyGfnpDtH9fFEC": null,
+          "5c6MKLdZmeMkLPLrHFuBYfnsEpCzgZerRTJ1uUXyUvbG": null,
+          "8DZ7x4iTNLXxkHoa3Fb8JfmyGwRDggBqHHS71c9RJW4P": null,
+          "8HM7bGE6qwogEF1cjCYhNZFHnyyc5Q7ArukszTp5BRhS": null
+        },
+        "audits": {
+          "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR": {
+            "address": "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220420",
+            "title": "Auditoría sintética Devnet 4.2",
+            "nextFindingId": "0",
+            "findingCount": "0",
+            "openFindingCount": "0"
+          }
+        },
+        "findings": {}
+      },
+      "observed": {
+        "result": {
+          "address": "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR",
+          "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+          "id": "202611220420",
+          "title": "Auditoría sintética Devnet 4.2",
+          "nextFindingId": "0",
+          "findingCount": "0",
+          "openFindingCount": "0"
+        },
+        "listed": true
+      },
+      "final": {
+        "slot": 525284940,
+        "accounts": {
+          "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR": {
+            "owner": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+            "executable": false,
+            "lamports": 1534160,
+            "base64": "8kHKk41n/YYBndQHJB/sZDxWT/LNtle5jdWXlkHOzhyVHQ6vsHVp9mrE35EsLwAAACAAAABBdWRpdG9yw61hIHNpbnTDqXRpY2EgRGV2bmV0IDQuMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+          },
+          "8caAjv4e22auwC2M3ymPvMUWa7SUq8LyGfnpDtH9fFEC": null,
+          "5c6MKLdZmeMkLPLrHFuBYfnsEpCzgZerRTJ1uUXyUvbG": null,
+          "8DZ7x4iTNLXxkHoa3Fb8JfmyGwRDggBqHHS71c9RJW4P": null,
+          "8HM7bGE6qwogEF1cjCYhNZFHnyyc5Q7ArukszTp5BRhS": null
+        },
+        "audits": {
+          "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR": {
+            "address": "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220420",
+            "title": "Auditoría sintética Devnet 4.2",
+            "nextFindingId": "0",
+            "findingCount": "0",
+            "openFindingCount": "0"
+          }
+        },
+        "findings": {}
+      }
+    },
+    {
+      "id": "create-second-audit",
+      "expected": "Crear otra auditoría existente de la misma autoridad para probar pertenencia.",
+      "status": "passed",
+      "signature": "VUqwdCKp4g6ZmGBn1UrMHspzrH1fGW1m9K7XpMPm9Lif2n54V82UJ5GQoQPPxm4RERCM23WKgi6xsrDJz8Pw4xz",
+      "explorer": "https://explorer.solana.com/tx/VUqwdCKp4g6ZmGBn1UrMHspzrH1fGW1m9K7XpMPm9Lif2n54V82UJ5GQoQPPxm4RERCM23WKgi6xsrDJz8Pw4xz?cluster=devnet",
+      "initial": {
+        "slot": 525284943,
+        "accounts": {
+          "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR": {
+            "owner": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+            "executable": false,
+            "lamports": 1534160,
+            "base64": "8kHKk41n/YYBndQHJB/sZDxWT/LNtle5jdWXlkHOzhyVHQ6vsHVp9mrE35EsLwAAACAAAABBdWRpdG9yw61hIHNpbnTDqXRpY2EgRGV2bmV0IDQuMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+          },
+          "8caAjv4e22auwC2M3ymPvMUWa7SUq8LyGfnpDtH9fFEC": null,
+          "5c6MKLdZmeMkLPLrHFuBYfnsEpCzgZerRTJ1uUXyUvbG": null,
+          "8DZ7x4iTNLXxkHoa3Fb8JfmyGwRDggBqHHS71c9RJW4P": null,
+          "8HM7bGE6qwogEF1cjCYhNZFHnyyc5Q7ArukszTp5BRhS": null
+        },
+        "audits": {
+          "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR": {
+            "address": "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220420",
+            "title": "Auditoría sintética Devnet 4.2",
+            "nextFindingId": "0",
+            "findingCount": "0",
+            "openFindingCount": "0"
+          }
+        },
+        "findings": {}
+      },
+      "observed": {
+        "slot": 525284957,
+        "error": null,
+        "feeLamports": 5000,
+        "logs": [
+          "Program GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv invoke [1]",
+          "Program log: Instruction: CreateAudit",
+          "Program 11111111111111111111111111111111 invoke [2]",
+          "Program 11111111111111111111111111111111 success",
+          "Program GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv consumed 7611 of 200000 compute units",
+          "Program GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv success"
+        ]
+      },
+      "final": {
+        "slot": 525284961,
+        "accounts": {
+          "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR": {
+            "owner": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+            "executable": false,
+            "lamports": 1534160,
+            "base64": "8kHKk41n/YYBndQHJB/sZDxWT/LNtle5jdWXlkHOzhyVHQ6vsHVp9mrE35EsLwAAACAAAABBdWRpdG9yw61hIHNpbnTDqXRpY2EgRGV2bmV0IDQuMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+          },
+          "8caAjv4e22auwC2M3ymPvMUWa7SUq8LyGfnpDtH9fFEC": {
+            "owner": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+            "executable": false,
+            "lamports": 1534160,
+            "base64": "8kHKk41n/YYBndQHJB/sZDxWT/LNtle5jdWXlkHOzhyVHQ6vsHVp9mrF35EsLwAAACAAAABBdWRpdG9yw61hIGFqZW5hIGFsIGhhbGxhemdvIDQuMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+          },
+          "5c6MKLdZmeMkLPLrHFuBYfnsEpCzgZerRTJ1uUXyUvbG": null,
+          "8DZ7x4iTNLXxkHoa3Fb8JfmyGwRDggBqHHS71c9RJW4P": null,
+          "8HM7bGE6qwogEF1cjCYhNZFHnyyc5Q7ArukszTp5BRhS": null
+        },
+        "audits": {
+          "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR": {
+            "address": "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220420",
+            "title": "Auditoría sintética Devnet 4.2",
+            "nextFindingId": "0",
+            "findingCount": "0",
+            "openFindingCount": "0"
+          },
+          "8caAjv4e22auwC2M3ymPvMUWa7SUq8LyGfnpDtH9fFEC": {
+            "address": "8caAjv4e22auwC2M3ymPvMUWa7SUq8LyGfnpDtH9fFEC",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220421",
+            "title": "Auditoría ajena al hallazgo 4.2",
+            "nextFindingId": "0",
+            "findingCount": "0",
+            "openFindingCount": "0"
+          }
+        },
+        "findings": {}
+      }
+    },
+    {
+      "id": "create-finding",
+      "expected": "Crear hallazgo 0 perteneciente a auditoría, abierto; contadores 1/1/1.",
+      "status": "passed",
+      "signature": "GDK7jeatTCWKUJMVX3GkivnTkRZncjCLSGaC9CFEy7b5SgcGHHSLyoL3eq7JaMY2xSKVE8x8eMDFSsWy8yCsTmm",
+      "explorer": "https://explorer.solana.com/tx/GDK7jeatTCWKUJMVX3GkivnTkRZncjCLSGaC9CFEy7b5SgcGHHSLyoL3eq7JaMY2xSKVE8x8eMDFSsWy8yCsTmm?cluster=devnet",
+      "initial": {
+        "slot": 525284965,
+        "accounts": {
+          "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR": {
+            "owner": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+            "executable": false,
+            "lamports": 1534160,
+            "base64": "8kHKk41n/YYBndQHJB/sZDxWT/LNtle5jdWXlkHOzhyVHQ6vsHVp9mrE35EsLwAAACAAAABBdWRpdG9yw61hIHNpbnTDqXRpY2EgRGV2bmV0IDQuMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+          },
+          "8caAjv4e22auwC2M3ymPvMUWa7SUq8LyGfnpDtH9fFEC": {
+            "owner": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+            "executable": false,
+            "lamports": 1534160,
+            "base64": "8kHKk41n/YYBndQHJB/sZDxWT/LNtle5jdWXlkHOzhyVHQ6vsHVp9mrF35EsLwAAACAAAABBdWRpdG9yw61hIGFqZW5hIGFsIGhhbGxhemdvIDQuMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+          },
+          "5c6MKLdZmeMkLPLrHFuBYfnsEpCzgZerRTJ1uUXyUvbG": null,
+          "8DZ7x4iTNLXxkHoa3Fb8JfmyGwRDggBqHHS71c9RJW4P": null,
+          "8HM7bGE6qwogEF1cjCYhNZFHnyyc5Q7ArukszTp5BRhS": null
+        },
+        "audits": {
+          "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR": {
+            "address": "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220420",
+            "title": "Auditoría sintética Devnet 4.2",
+            "nextFindingId": "0",
+            "findingCount": "0",
+            "openFindingCount": "0"
+          },
+          "8caAjv4e22auwC2M3ymPvMUWa7SUq8LyGfnpDtH9fFEC": {
+            "address": "8caAjv4e22auwC2M3ymPvMUWa7SUq8LyGfnpDtH9fFEC",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220421",
+            "title": "Auditoría ajena al hallazgo 4.2",
+            "nextFindingId": "0",
+            "findingCount": "0",
+            "openFindingCount": "0"
+          }
+        },
+        "findings": {}
+      },
+      "observed": {
+        "slot": 525284975,
+        "error": null,
+        "feeLamports": 5000,
+        "logs": [
+          "Program GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv invoke [1]",
+          "Program log: Instruction: CreateFinding",
+          "Program 11111111111111111111111111111111 invoke [2]",
+          "Program 11111111111111111111111111111111 success",
+          "Program GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv consumed 18119 of 200000 compute units",
+          "Program GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv success"
+        ]
+      },
+      "final": {
+        "slot": 525284981,
+        "accounts": {
+          "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR": {
+            "owner": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+            "executable": false,
+            "lamports": 1534160,
+            "base64": "8kHKk41n/YYBndQHJB/sZDxWT/LNtle5jdWXlkHOzhyVHQ6vsHVp9mrE35EsLwAAACAAAABBdWRpdG9yw61hIHNpbnTDqXRpY2EgRGV2bmV0IDQuMgEAAAAAAAAAAQAAAAAAAAABAAAAAAAAAP4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+          },
+          "8caAjv4e22auwC2M3ymPvMUWa7SUq8LyGfnpDtH9fFEC": {
+            "owner": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+            "executable": false,
+            "lamports": 1534160,
+            "base64": "8kHKk41n/YYBndQHJB/sZDxWT/LNtle5jdWXlkHOzhyVHQ6vsHVp9mrF35EsLwAAACAAAABBdWRpdG9yw61hIGFqZW5hIGFsIGhhbGxhemdvIDQuMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+          },
+          "5c6MKLdZmeMkLPLrHFuBYfnsEpCzgZerRTJ1uUXyUvbG": null,
+          "8DZ7x4iTNLXxkHoa3Fb8JfmyGwRDggBqHHS71c9RJW4P": {
+            "owner": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+            "executable": false,
+            "lamports": 6664960,
+            "base64": "zxc4DsWqyyIBBjTaG5RkE/14qbtSJQxamE1gM/csgfui3ZPDj9s2SNgAAAAAAAAAAAIAGgAAAEhhbGxhemdvIHNpbnTDqXRpY28gRGV2bmV0KAAAAERlc2NyaXBjacOzbiBzaW50w6l0aWNhIGRlIHZlcmlmaWNhY2nDs24AAAAA/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "8HM7bGE6qwogEF1cjCYhNZFHnyyc5Q7ArukszTp5BRhS": null
+        },
+        "audits": {
+          "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR": {
+            "address": "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220420",
+            "title": "Auditoría sintética Devnet 4.2",
+            "nextFindingId": "1",
+            "findingCount": "1",
+            "openFindingCount": "1"
+          },
+          "8caAjv4e22auwC2M3ymPvMUWa7SUq8LyGfnpDtH9fFEC": {
+            "address": "8caAjv4e22auwC2M3ymPvMUWa7SUq8LyGfnpDtH9fFEC",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220421",
+            "title": "Auditoría ajena al hallazgo 4.2",
+            "nextFindingId": "0",
+            "findingCount": "0",
+            "openFindingCount": "0"
+          }
+        },
+        "findings": {
+          "8DZ7x4iTNLXxkHoa3Fb8JfmyGwRDggBqHHS71c9RJW4P": {
+            "address": "8DZ7x4iTNLXxkHoa3Fb8JfmyGwRDggBqHHS71c9RJW4P",
+            "audit": "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR",
+            "id": "0",
+            "title": "Hallazgo sintético Devnet",
+            "description": "Descripción sintética de verificación",
+            "severity": "high",
+            "status": "open",
+            "correctiveAction": null
+          }
+        }
+      }
+    },
+    {
+      "id": "read-findings",
+      "expected": "Listar el hallazgo relacionado con gravedad alta.",
+      "status": "passed",
+      "signature": null,
+      "explorer": null,
+      "initial": {
+        "slot": 525284984,
+        "accounts": {
+          "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR": {
+            "owner": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+            "executable": false,
+            "lamports": 1534160,
+            "base64": "8kHKk41n/YYBndQHJB/sZDxWT/LNtle5jdWXlkHOzhyVHQ6vsHVp9mrE35EsLwAAACAAAABBdWRpdG9yw61hIHNpbnTDqXRpY2EgRGV2bmV0IDQuMgEAAAAAAAAAAQAAAAAAAAABAAAAAAAAAP4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+          },
+          "8caAjv4e22auwC2M3ymPvMUWa7SUq8LyGfnpDtH9fFEC": {
+            "owner": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+            "executable": false,
+            "lamports": 1534160,
+            "base64": "8kHKk41n/YYBndQHJB/sZDxWT/LNtle5jdWXlkHOzhyVHQ6vsHVp9mrF35EsLwAAACAAAABBdWRpdG9yw61hIGFqZW5hIGFsIGhhbGxhemdvIDQuMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+          },
+          "5c6MKLdZmeMkLPLrHFuBYfnsEpCzgZerRTJ1uUXyUvbG": null,
+          "8DZ7x4iTNLXxkHoa3Fb8JfmyGwRDggBqHHS71c9RJW4P": {
+            "owner": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+            "executable": false,
+            "lamports": 6664960,
+            "base64": "zxc4DsWqyyIBBjTaG5RkE/14qbtSJQxamE1gM/csgfui3ZPDj9s2SNgAAAAAAAAAAAIAGgAAAEhhbGxhemdvIHNpbnTDqXRpY28gRGV2bmV0KAAAAERlc2NyaXBjacOzbiBzaW50w6l0aWNhIGRlIHZlcmlmaWNhY2nDs24AAAAA/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "8HM7bGE6qwogEF1cjCYhNZFHnyyc5Q7ArukszTp5BRhS": null
+        },
+        "audits": {
+          "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR": {
+            "address": "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220420",
+            "title": "Auditoría sintética Devnet 4.2",
+            "nextFindingId": "1",
+            "findingCount": "1",
+            "openFindingCount": "1"
+          },
+          "8caAjv4e22auwC2M3ymPvMUWa7SUq8LyGfnpDtH9fFEC": {
+            "address": "8caAjv4e22auwC2M3ymPvMUWa7SUq8LyGfnpDtH9fFEC",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220421",
+            "title": "Auditoría ajena al hallazgo 4.2",
+            "nextFindingId": "0",
+            "findingCount": "0",
+            "openFindingCount": "0"
+          }
+        },
+        "findings": {
+          "8DZ7x4iTNLXxkHoa3Fb8JfmyGwRDggBqHHS71c9RJW4P": {
+            "address": "8DZ7x4iTNLXxkHoa3Fb8JfmyGwRDggBqHHS71c9RJW4P",
+            "audit": "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR",
+            "id": "0",
+            "title": "Hallazgo sintético Devnet",
+            "description": "Descripción sintética de verificación",
+            "severity": "high",
+            "status": "open",
+            "correctiveAction": null
+          }
+        }
+      },
+      "observed": [
+        {
+          "address": "8DZ7x4iTNLXxkHoa3Fb8JfmyGwRDggBqHHS71c9RJW4P",
+          "audit": "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR",
+          "id": "0",
+          "title": "Hallazgo sintético Devnet",
+          "description": "Descripción sintética de verificación",
+          "severity": "high",
+          "status": "open",
+          "correctiveAction": null
+        }
+      ],
+      "final": {
+        "slot": 525284991,
+        "accounts": {
+          "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR": {
+            "owner": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+            "executable": false,
+            "lamports": 1534160,
+            "base64": "8kHKk41n/YYBndQHJB/sZDxWT/LNtle5jdWXlkHOzhyVHQ6vsHVp9mrE35EsLwAAACAAAABBdWRpdG9yw61hIHNpbnTDqXRpY2EgRGV2bmV0IDQuMgEAAAAAAAAAAQAAAAAAAAABAAAAAAAAAP4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+          },
+          "8caAjv4e22auwC2M3ymPvMUWa7SUq8LyGfnpDtH9fFEC": {
+            "owner": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+            "executable": false,
+            "lamports": 1534160,
+            "base64": "8kHKk41n/YYBndQHJB/sZDxWT/LNtle5jdWXlkHOzhyVHQ6vsHVp9mrF35EsLwAAACAAAABBdWRpdG9yw61hIGFqZW5hIGFsIGhhbGxhemdvIDQuMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+          },
+          "5c6MKLdZmeMkLPLrHFuBYfnsEpCzgZerRTJ1uUXyUvbG": null,
+          "8DZ7x4iTNLXxkHoa3Fb8JfmyGwRDggBqHHS71c9RJW4P": {
+            "owner": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+            "executable": false,
+            "lamports": 6664960,
+            "base64": "zxc4DsWqyyIBBjTaG5RkE/14qbtSJQxamE1gM/csgfui3ZPDj9s2SNgAAAAAAAAAAAIAGgAAAEhhbGxhemdvIHNpbnTDqXRpY28gRGV2bmV0KAAAAERlc2NyaXBjacOzbiBzaW50w6l0aWNhIGRlIHZlcmlmaWNhY2nDs24AAAAA/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "8HM7bGE6qwogEF1cjCYhNZFHnyyc5Q7ArukszTp5BRhS": null
+        },
+        "audits": {
+          "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR": {
+            "address": "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220420",
+            "title": "Auditoría sintética Devnet 4.2",
+            "nextFindingId": "1",
+            "findingCount": "1",
+            "openFindingCount": "1"
+          },
+          "8caAjv4e22auwC2M3ymPvMUWa7SUq8LyGfnpDtH9fFEC": {
+            "address": "8caAjv4e22auwC2M3ymPvMUWa7SUq8LyGfnpDtH9fFEC",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220421",
+            "title": "Auditoría ajena al hallazgo 4.2",
+            "nextFindingId": "0",
+            "findingCount": "0",
+            "openFindingCount": "0"
+          }
+        },
+        "findings": {
+          "8DZ7x4iTNLXxkHoa3Fb8JfmyGwRDggBqHHS71c9RJW4P": {
+            "address": "8DZ7x4iTNLXxkHoa3Fb8JfmyGwRDggBqHHS71c9RJW4P",
+            "audit": "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR",
+            "id": "0",
+            "title": "Hallazgo sintético Devnet",
+            "description": "Descripción sintética de verificación",
+            "severity": "high",
+            "status": "open",
+            "correctiveAction": null
+          }
+        }
+      }
+    },
+    {
+      "id": "update-open-finding",
+      "expected": "Modificar la misma PDA abierta; gravedad crítica y contadores conservados.",
+      "status": "failed",
+      "signature": "57gpBWbcBt1y6nEjMNKUqDLgLX2aupXTbUkM5d6qGwua3bB697ieHQE9zSQmHfuTThxD2XeoKS4RDLp877pRkZLZ",
+      "explorer": "https://explorer.solana.com/tx/57gpBWbcBt1y6nEjMNKUqDLgLX2aupXTbUkM5d6qGwua3bB697ieHQE9zSQmHfuTThxD2XeoKS4RDLp877pRkZLZ?cluster=devnet",
+      "initial": {
+        "slot": 525284996,
+        "accounts": {
+          "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR": {
+            "owner": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+            "executable": false,
+            "lamports": 1534160,
+            "base64": "8kHKk41n/YYBndQHJB/sZDxWT/LNtle5jdWXlkHOzhyVHQ6vsHVp9mrE35EsLwAAACAAAABBdWRpdG9yw61hIHNpbnTDqXRpY2EgRGV2bmV0IDQuMgEAAAAAAAAAAQAAAAAAAAABAAAAAAAAAP4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+          },
+          "8caAjv4e22auwC2M3ymPvMUWa7SUq8LyGfnpDtH9fFEC": {
+            "owner": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+            "executable": false,
+            "lamports": 1534160,
+            "base64": "8kHKk41n/YYBndQHJB/sZDxWT/LNtle5jdWXlkHOzhyVHQ6vsHVp9mrF35EsLwAAACAAAABBdWRpdG9yw61hIGFqZW5hIGFsIGhhbGxhemdvIDQuMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+          },
+          "5c6MKLdZmeMkLPLrHFuBYfnsEpCzgZerRTJ1uUXyUvbG": null,
+          "8DZ7x4iTNLXxkHoa3Fb8JfmyGwRDggBqHHS71c9RJW4P": {
+            "owner": "GV8SZn6i29tL4CmJMei5P3N3BLUxVZBWrG6hFQVSVSBv",
+            "executable": false,
+            "lamports": 6664960,
+            "base64": "zxc4DsWqyyIBBjTaG5RkE/14qbtSJQxamE1gM/csgfui3ZPDj9s2SNgAAAAAAAAAAAIAGgAAAEhhbGxhemdvIHNpbnTDqXRpY28gRGV2bmV0KAAAAERlc2NyaXBjacOzbiBzaW50w6l0aWNhIGRlIHZlcmlmaWNhY2nDs24AAAAA/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          },
+          "8HM7bGE6qwogEF1cjCYhNZFHnyyc5Q7ArukszTp5BRhS": null
+        },
+        "audits": {
+          "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR": {
+            "address": "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220420",
+            "title": "Auditoría sintética Devnet 4.2",
+            "nextFindingId": "1",
+            "findingCount": "1",
+            "openFindingCount": "1"
+          },
+          "8caAjv4e22auwC2M3ymPvMUWa7SUq8LyGfnpDtH9fFEC": {
+            "address": "8caAjv4e22auwC2M3ymPvMUWa7SUq8LyGfnpDtH9fFEC",
+            "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+            "id": "202611220421",
+            "title": "Auditoría ajena al hallazgo 4.2",
+            "nextFindingId": "0",
+            "findingCount": "0",
+            "openFindingCount": "0"
+          }
+        },
+        "findings": {
+          "8DZ7x4iTNLXxkHoa3Fb8JfmyGwRDggBqHHS71c9RJW4P": {
+            "address": "8DZ7x4iTNLXxkHoa3Fb8JfmyGwRDggBqHHS71c9RJW4P",
+            "audit": "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR",
+            "id": "0",
+            "title": "Hallazgo sintético Devnet",
+            "description": "Descripción sintética de verificación",
+            "severity": "high",
+            "status": "open",
+            "correctiveAction": null
+          }
+        }
+      },
+      "error": {
+        "message": "fetch failed"
+      }
+    }
+  ],
+  "scope": "Application/Infrastructure reales y rechazos firmados en preflight Devnet; no extensión de navegador.",
+  "endpoint": "https://api.devnet.solana.com/",
+  "genesis": "EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG",
+  "authority": "Bd6Xa9JV3x3hZVkEnuGnH323MZxhYuCXuRe6DFSK3LKT",
+  "unauthorizedWallet": "H5iHtUYjBpKNQi6axDDJhC4iVFnXyu4B3ioY97da5Tqz",
+  "audit": "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR",
+  "otherAudit": "8caAjv4e22auwC2M3ymPvMUWa7SUq8LyGfnpDtH9fFEC",
+  "finding0": "8DZ7x4iTNLXxkHoa3Fb8JfmyGwRDggBqHHS71c9RJW4P",
+  "finding1": "8HM7bGE6qwogEF1cjCYhNZFHnyyc5Q7ArukszTp5BRhS",
+  "initial": {
+    "slot": 525284863,
+    "accounts": {
+      "REBwx7FKtNwmVfE61R7Erg9ymbdN28HKir4cGFoGYFR": null,
+      "8caAjv4e22auwC2M3ymPvMUWa7SUq8LyGfnpDtH9fFEC": null,
+      "5c6MKLdZmeMkLPLrHFuBYfnsEpCzgZerRTJ1uUXyUvbG": null,
+      "8DZ7x4iTNLXxkHoa3Fb8JfmyGwRDggBqHHS71c9RJW4P": null,
+      "8HM7bGE6qwogEF1cjCYhNZFHnyyc5Q7ArukszTp5BRhS": null
+    },
+    "audits": {},
+    "findings": {}
+  },
+  "programSha256": "c941ab95d5cbfc6ae9ec73683dec79e24b0a60f11c505e7a173555b44eb08f17",
+  "balanceStartLamports": 8606654440,
+  "budgetLamports": 100000000,
+  "funding": {
+    "signature": "2f3zg8Kz7D8pHDEK2deftiZfJinbkzbUcQED2uSCsG97aYeYtK1iXLyvSSdiW2GPi8zxAEk9uXyh2Pfnu55ypf6z",
+    "transaction": {
+      "slot": 525284879,
+      "error": null,
+      "feeLamports": 5000,
+      "logs": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success"
+      ]
+    }
+  },
+  "unauthorizedWalletFundedLamports": 30000000,
+  "fatalError": "fetch failed",
+  "verified": false
+}

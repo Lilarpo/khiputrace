@@ -1,0 +1,4 @@
+
+> khiputrace@0.1.0 test:devnet-ui
+> node scripts/check-devnet-ui.mjs
+
